@@ -1,0 +1,51 @@
+.colors__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0;
+    max-width: 50rem;
+}
+
+.color__example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10.3125em;
+    height: 7.5em;
+    transition: transform 250ms;
+    margin-bottom: 0.5rem;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.color {
+    margin-bottom: 3rem;
+    p {
+        line-height: 1.4;
+        color: black;
+        margin: 0;
+        font-weight: 600;
+        &:last-of-type {
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+}
+
+.primary {
+    background: $primary;
+}
+.success {
+    background: $success;
+}
+.info {
+    background: $info;
+}
+.warning {
+    background: $warning;
+}
+.danger {
+    background: $danger;
+}

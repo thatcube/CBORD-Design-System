@@ -1,0 +1,60 @@
+@import "normalize";
+@import "variables";
+@import "colors";
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    background: $background;
+}
+
+.grid {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    grid-template-areas: "sidebar content" "sidebar content";
+}
+.sidebar { 
+    grid-area: sidebar;
+    position: fixed;
+    ul {
+        list-style: none;
+        padding: 0.5rem;
+    }
+    li a {
+        color: black;
+        display: block;
+        padding: 1rem 0.5rem;
+        text-decoration: none;
+        transition: .3s ease transform;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        &:hover, &:focus {
+            color: $primary;
+            transform: translateX(3px);
+        }
+        &:focus {
+            box-shadow: 0 0 0 3px rgba($primary, 0.4);
+            outline: none;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+    .submenu a {
+        color: $gray;
+        padding: 0.5rem;
+    }
+}
+
+.content { 
+    grid-area: content;
+    max-width: 768px;
+}
+
+p {
+    color: $gray;
+    line-height: 2;
+    font-size: 1.2em;
+    letter-spacing: -0.015em;
+}
