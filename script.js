@@ -8,13 +8,13 @@ $(document).ready(function() {
 });
 
 
-var $body = $('body');
-$body.on('click', function(event) {
-  var clickedOutside = $(event.target).closest('.menu-toggle').length == 0;
-  if (clickedOutside && $body.hasClass('open')) {
-    $(".menu, .menu-toggle, .sidebar, .header, body").toggleClass("open");
-  }
-})
+// var $body = $('body');
+// $body.on('click', function(event) {
+//   var clickedOutside = $(event.target).closest('.menu-toggle').length == 0;
+//   if (clickedOutside && $body.hasClass('open')) {
+//     $(".menu, .menu-toggle, .sidebar, .header, body").toggleClass("open");
+//   }
+// })
 
 clipboard = new ClipboardJS('.copy');
 
