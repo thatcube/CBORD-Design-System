@@ -37,6 +37,20 @@
             }
         }
     }
+    &.secondary {
+        background: $secondary;
+        color: $white;
+        &:hover {
+            background: mix($secondary, $white, 90%);
+        }
+        &.outline {
+            border-color: $secondary;
+            color: $secondary;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
     &.info {
         background: $info;
         color: #2c2c2c;

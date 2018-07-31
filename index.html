@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CBORD Developer Style Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="grid">
@@ -16,7 +16,7 @@
             <span></span>
             <span></span>
         </button>
-        <h1 class="title">CBORD Style Guide</h1>
+        <h1 class="title">CBORD Developer Style Guide</h1>
     </div>
 
     <nav class="sidebar">
@@ -57,6 +57,7 @@
     
     <div class="content">
     <div class="content-center">
+    <h1 class="title__content">CBORD Developer Style Guide</h1>
     <article id="introduction">
         <h1>Introduction</h1>
         <p>Having a strong, modern, and stylistic visual identity helps to solidify CBORD 
@@ -65,8 +66,8 @@
             reputation for quality and innovation. This guide is intended to help all developers 
             adhere to CBORD’s visual identity and design goals.</p>
         <p>Creating a style guide is especially important to CBORD because of the number of products 
-            that we offer. Having multiple different backend solutions, development teams, and industries 
-            creates unwanted separation. This guide aims to stylistically unify backend applications—especially 
+            that we offer. Having multiple different software solutions, development teams, and industries 
+            creates unwanted separation. This guide aims to stylistically unify every application—especially 
             as the number of users is multiplied. Brand awareness should happen at the application level—not 
             just the marketing level.</p>
         <h2>Intended Audience</h2>
@@ -93,7 +94,7 @@
             of a decision before it causes unintended issues.
         </p>
     </article>
-    <article id="colors">
+    <article class="colors" id="colors">
         <h1>Colors</h1>
         <div class="colors__list">
 
@@ -102,7 +103,15 @@
                     <button value="heyo" class="button copy" data-clipboard-text="#005cb9">Copy HEX</button>
                 </div>
                 <p>primary</p>
-                <p id="primary">#005cb9</p>
+                <p>#005cb9</p>
+            </div>
+
+            <div class="color">
+                <div class="color__example secondary">
+                    <button value="heyo" class="button copy" data-clipboard-text="#d63665">Copy HEX</button>
+                </div>
+                <p>secondary</p>
+                <p>#d63665</p>
             </div>
 
             <div class="color">
@@ -152,6 +161,54 @@
                 <p>#fff</p>
             </div>
         </div>
+        <h2>Usage</h2>
+        <table>
+            <thead>
+                <tr>
+                <th>Variable</th>
+                <th>Role(s)</th>
+                <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>$primary</strong></td>
+                    <td>Primary brand</td>
+                    <td>#005cb9<span class="primary table-swatch"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>$secondary</strong></td>
+                    <td>Supporting brand <br> Actions</td>
+                    <td>#d63665<span class="secondary table-swatch"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>$success</strong></td>
+                    <td>Success</td>
+                    <td>#008728<span class="success table-swatch"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>$info</strong></td>
+                    <td>Information</td>
+                    <td>#4ca5ff<span class="info table-swatch"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>$warning</strong></td>
+                    <td>Warning</td>
+                    <td>#f7ba45<span class="warning table-swatch"></span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>$danger</strong></td>
+                    <td>Danger</td>
+                    <td>#b80000<span class="danger table-swatch"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>$dark</strong></td>
+                    <td>Supporting brand</td>
+                    <td>#333<span class="dark table-swatch"></span></td>
+                </tr>
+            </tbody>
+        </table>
     </article>
     <article id="accessibility">
         <h1>Accessibility</h1>

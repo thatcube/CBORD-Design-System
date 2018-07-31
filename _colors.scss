@@ -49,6 +49,9 @@
 .primary {
     background: $primary;
 }
+.secondary {
+    background: $secondary;
+}
 .success {
     background: $success;
 }
@@ -67,4 +70,48 @@
 .light {
     background: $white;
     border: 1px solid #dfe3e6;
+}
+
+tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.colors table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: scroll;
+    thead th {
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-align: left;
+        line-height: 1.25;
+        padding: 1rem 3rem 1rem 0;
+        border-bottom: 2px solid $primary;
+        white-space: nowrap;
+    }
+    tbody tr {
+        border-bottom: 1px solid #ccc;
+        td {
+            font-size: 0.875rem;
+            padding: 1rem 3rem 1rem 0;
+            line-height: 1.25;
+            position: relative;
+            vertical-align: baseline;
+        }
+    }
+}
+.table-swatch {
+    top: 25px;
+    transform: translateY(-50%);
+    left: 5rem;
+    display: block;
+    position: absolute;
+    height: 12px;
+    width: 12px;
 }
