@@ -49,6 +49,7 @@ body {
     z-index: 2;
     display: flex;
     align-items: center;
+    transition: .3s ease transform;
     @media all and (max-width: $breakpoint) {
         position: fixed;
         // width: 100vw;
@@ -57,6 +58,12 @@ body {
         background: white;
         box-shadow: 0 0 3rem rgba($black, 0.1);
     }
+    &.nav-up {
+        transform: translateY(-4rem);
+    }
+    &.open {
+        transform: translateY(0);
+    }
 }
 
 $logo-text-color: #414042;
@@ -64,6 +71,7 @@ $logo-text-color: #414042;
     //match logo color
     color: $logo-text-color;
 
+    user-select: none;
     margin-left: 4rem;
     display: flex;
     align-items: center;
@@ -86,6 +94,7 @@ $logo-text-color: #414042;
         @media all and (max-width: $breakpoint) {
             display: none;
         }
+        user-select: none;
         display: flex;
         align-items: center;
         font-weight: 400;
@@ -224,6 +233,9 @@ $logo-text-color: #414042;
     }
     h2 {
         margin-top: 5rem;
+    }
+    h1 ~ h2 {
+        margin-top: 2rem;
     }
 }
 
