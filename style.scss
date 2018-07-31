@@ -59,14 +59,25 @@ body {
     }
 }
 
+$logo-text-color: #414042;
 .title {
+    //match logo color
+    color: $logo-text-color;
+
     margin-left: 4rem;
-    color: $dark;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 2.3rem;
+    text-transform: lowercase;
     @media all and (max-width: 767.99px) {
         font-size: 1.4em;
     }
     @media all and (min-width: $breakpoint) {
         display: none;
+    }
+    img {
+        margin-right: 1rem;
     }
     &__content {
         &:before {
@@ -75,9 +86,27 @@ body {
         @media all and (max-width: $breakpoint) {
             display: none;
         }
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        flex-direction: column;
+        font-size: 4rem;
+        text-transform: lowercase;
+        color: $logo-text-color;
+        img {
+            width: 30rem;
+        }
     }
 }
 
+.title-text {
+    // only this color to match the logo
+    color: #0261a5;
+}
+
+.primary-text {
+    color: $primary !important;
+}
 .dark-text {
     color: $dark !important;
 }
