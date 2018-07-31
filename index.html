@@ -15,6 +15,7 @@
             <span></span>
             <span></span>
             <span></span>
+            <div class="sr-only">Toggle navigation menu</div>
         </button>
         <h1 class="title"><img class="image small" src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer <span class="title-text">Style</span> Guide</span></h1>
     </header>
@@ -314,9 +315,9 @@
         <p>A <b>block</b> is a functionally and logically independent component, for example a button: 
             <code class="code no-break">.btn { }</code>. A block can be thought of as a parent.</p>
         <p>An <b>element</b> is an item that cannot be placed outside of a block. Elements are indicated 
-            by two underscores following the name of the block, such as: <code class="code no-break">.btn__price { }</code>.</p>
+            by two underscores following the name of the block, such as: <code class="code no-break">.btn__text { }</code>.</p>
         <p>A <b>modifier</b> is an entity that defines the appearance or behavior of a block or element. This 
-            is indicated by appending two hyphens to the name of the block, such as: <code class="code no-break">btn--blue</code>.</p>
+            is indicated by appending two hyphens to the name of the block, such as: <code class="code no-break">.btn--blue { }</code>.</p>
         <p>BEM is much more extensive than what is summarized here. To read more, 
             visit the <a href="https://bem.info/" target="_blank">official BEM website</a>.</p>
 
@@ -331,8 +332,8 @@
             and the content of the application. When creating UI content, no matter what it is, you should do 
             so in a clear, confident, and engaging tone.</p>
         <ul>
-            <li class="indent"><b class="dark-text">Don't:</b> <q><i>ERROR! You messed up big time and now the app can't connect to the database - nice going.</i></q></li>
-            <li class="indent"><b class="dark-text">Do:</b> <q><i>Sorry, we can't connect to the database right now.</i></q></li>
+            <li class="indent"><b class="danger-text">Don't:</b> <q><i>ERROR! You messed up big time and now the app can't connect to the database - nice going.</i></q></li>
+            <li class="indent"><b class="success-text">Do:</b> <q><i>Sorry, we can't connect to the database right now.</i></q></li>
         </ul>
         <h2>Voice</h2>
         <p>Voice is <i class="dark-text">what</i> you are speaking about. CBORD’s voice is friendly and familiar, 
@@ -340,9 +341,9 @@
             efficiently, and feel confident in user interface actions. Voice should inform the user without confusion 
             or clutter.</p>
         <ul>
-            <li class="indent"><b class="dark-text">Don't:</b> <q><i>Well it looks like the transaction did what it 
+            <li class="indent"><b class="danger-text">Don't:</b> <q><i>Well it looks like the transaction did what it 
                 should - you're probably good to go.</i></q></li>
-            <li class="indent"><b class="dark-text">Do:</b> <q><i>The transaction was completed successfully.</i></q></li>
+            <li class="indent"><b class="success-text">Do:</b> <q><i>The transaction was completed successfully.</i></q></li>
         </ul>
         <h2>Be Concise</h2>
         <p>
@@ -358,8 +359,8 @@
                 <li>Use the <b>active voice</b>—avoid the passive voice.</li>
                 <p>When using active voice, the subject of the sentence does the action. In passive voice, the subject 
                     of the sentence has the action done to it.
-                <li class="indent"><b class="dark-text">Don't:</b> <q><i>The button was clicked by the user.</i></q></li>
-                <li class="indent"><b class="dark-text">Do:</b> <q><i>The user clicked the button.</i></q></li>
+                <li class="indent"><b class="danger-text">Don't:</b> <q><i>The button was clicked by the user.</i></q></li>
+                <li class="indent"><b class="success-text">Do:</b> <q><i>The user clicked the button.</i></q></li>
                 </p>
                 <li>Your writing should be concise, direct, clear, and positive; avoid negative writing.</li>
                 <li>Avoid slang or jargon—write in plain English.</li>

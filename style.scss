@@ -11,8 +11,15 @@ $breakpoint: 991.98px;
     box-sizing: border-box;
 }
 
-body {
+html {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    @media all and (min-width: 500px) {
+        font-size: calc( 14px + 8 * ((100vw - 500px) / 1500));
+    }
+}
+
+body {
     background: $background;
 }
 
@@ -78,6 +85,9 @@ $logo-text-color: #414042;
     font-weight: 400;
     font-size: 2.3rem;
     text-transform: lowercase;
+    @media all and (min-width: 350px) and (max-width: 415px) {
+        width: 16rem;
+    }
     @media all and (max-width: 767.99px) {
         font-size: 1.4em;
     }
@@ -118,6 +128,21 @@ $logo-text-color: #414042;
 }
 .dark-text {
     color: $dark !important;
+}
+.danger-text {
+    color: $danger !important;
+}
+.success-text {
+    color: mix($success, $dark, 90%) !important;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
 .sidebar { 
@@ -204,7 +229,6 @@ $logo-text-color: #414042;
     p, ul, ol {
     color: $gray;
     line-height: 2;
-    font-size: 1.2em;
     letter-spacing: -0.015em;
     a {
         font-weight: 600;
