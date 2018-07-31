@@ -80,9 +80,7 @@
     <article id="general">
         <h1>General</h1>
         <p>If your team is already using Bootstrap, or any other framework, it is acceptable to continue 
-            using the framework. However, the default styles should be updated/modified to follow modern, 
-            <a href="https://material.io/guidelines/" target="_blank">Material Design</a> principles and guidelines. The new style should coincide with the other various 
-            designs and guidelines stated within this document.</p>
+            using the framework. However, the default styles should be updated/modified to adhere to this guide. This guide is based heavily on modern, Material Design principles and guidelines. I encourage you to visit the <a href="https://material.io/design/" target="_blank">Material Design Website</a>.</p>
         <h2>User First</h2>
         <p>
             CBORD has a user-first mentality. When making any design decisions, consider the intended user 
@@ -99,64 +97,64 @@
 
             <div class="color">
                 <div class="color__example primary">
-                    <button value="heyo" class="button copy" data-clipboard-text="#005cb9">Copy HEX</button>
+                    <button class="button outline dark copy" data-clipboard-text="#005cb9">Copy HEX</button>
                 </div>
-                <p>primary</p>
+                <p class="dark-text">primary</p>
                 <p>#005cb9</p>
             </div>
 
             <div class="color">
                 <div class="color__example secondary">
-                    <button value="heyo" class="button copy" data-clipboard-text="#d63665">Copy HEX</button>
+                    <button class="button outline dark copy" data-clipboard-text="#d63665">Copy HEX</button>
                 </div>
-                <p>secondary</p>
+                <p class="dark-text">secondary</p>
                 <p>#d63665</p>
             </div>
 
             <div class="color">
                 <div class="color__example success">
-                    <button class="button copy" data-clipboard-text="#008728">Copy HEX</button>
+                    <button class="button outline dark copy" data-clipboard-text="#008728">Copy HEX</button>
                 </div>
-                <p>success</p>
+                <p class="dark-text">success</p>
                 <p>#008728</p>
             </div>
 
             <div class="color">
                 <div class="color__example info">
-                    <button class="button copy" data-clipboard-text="#4ca5ff">Copy HEX</button>              
+                    <button class="button outline dark copy" data-clipboard-text="#4ca5ff">Copy HEX</button>              
                 </div>
-                <p>info</p>
+                <p class="dark-text">info</p>
                 <p>#4ca5ff</p>
             </div>
 
             <div class="color">
                 <div class="color__example warning">
-                    <button class="button copy" data-clipboard-text="#f7ba45">Copy HEX</button>
+                    <button class="button outline dark copy" data-clipboard-text="#f7ba45">Copy HEX</button>
                 </div>
-                <p>warning</p>
+                <p class="dark-text">warning</p>
                 <p>#f7ba45</p>
             </div>
 
             <div class="color">
                 <div class="color__example danger">
-                    <button class="button copy" data-clipboard-text="#b80000">Copy HEX</button>
+                    <button class="button outline dark copy" data-clipboard-text="#b80000">Copy HEX</button>
                 </div>
-                <p>danger</p>
+                <p class="dark-text">danger</p>
                 <p>#b80000</p>
             </div>
             
             <div class="color">
                 <div class="color__example dark">
-                    <button class="button copy" data-clipboard-text="#333">Copy HEX</button>
+                    <button class="button outline light copy" data-clipboard-text="#333">Copy HEX</button>
                 </div>
-                <p>dark</p>
+                <p class="dark-text">dark</p>
                 <p>#333</p>
             </div>
             <div class="color">
                 <div class="color__example light">
-                    <button class="button copy" data-clipboard-text="#fff">Copy HEX</button>
+                    <button class="button outline dark copy" data-clipboard-text="#fff">Copy HEX</button>
                 </div>
-                <p>light</p>
+                <p class="dark-text">light</p>
                 <p>#fff</p>
             </div>
         </div>
@@ -177,12 +175,12 @@
                 </tr>
                 <tr>
                     <td><strong>$secondary</strong></td>
-                    <td>Supporting brand <br> Actions</td>
+                    <td>Actions<br> Supporting brand</td>
                     <td>#d63665<span class="secondary table-swatch"></span></td>
                 </tr>
                 <tr>
                     <td><strong>$success</strong></td>
-                    <td>Success</td>
+                    <td>Success<br> Confirm</td>
                     <td>#008728<span class="success table-swatch"></span></td>
                 </tr>
                 <tr>
@@ -198,7 +196,7 @@
 
                 <tr>
                     <td><strong>$danger</strong></td>
-                    <td>Danger</td>
+                    <td>Error<br> Remove</td>
                     <td>#b80000<span class="danger table-swatch"></span></td>
                 </tr>
                 <tr>
@@ -212,7 +210,7 @@
     <article id="accessibility">
         <h1>Accessibility</h1>
         <p>CBORD apps should be accessibile. Every application should follow 
-            <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG 2.0</a> 
+            <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a> 
             guidelines at a level AA conformance level.</p>
         <p>To quickly and easily check accessibility for a web application, install the 
             <a href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc" 
@@ -240,12 +238,12 @@
                     <li>Copy and paste the CSS that was generated on the tool website into the CSS file you just created</li>
                     <li>Link the CSS file to your project</li>
                 </ol>
-                <p><b>Do</b> link every font style. You can verify this by using CSS to apply a drastic font-weight 
+                <p><b class="dark-text">Do</b> link every font style. You can verify this by using CSS to apply a drastic font-weight 
                     (such as 100 or 900) to an element on the page. If the font changes and matches the style shown on the 
                     image above, then it is linked correctly. Properly linking all the Roboto font styles ensures that it 
                     renders the same on every device or browser.</p>
 
-                <p><b>Do not</b> only link one style of the Roboto font-face, such as ‘Roboto Regular.’ Even though modern 
+                <p><b class="dark-text">Do not</b> only link one style of the Roboto font-face, such as ‘Roboto Regular.’ Even though modern 
                     browsers can render higher font weights, italics, and styles, each browser does it differently.</p>
         <h2>Fallback Fonts</h2>
         <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
@@ -259,6 +257,7 @@
         <section class="buttons" id="buttons">
             <h2>Buttons</h2>
             <h3>Standard Buttons</h3>
+            <p>Standard buttons have high emphasis because of their bold, solid fill, and are used for important actions.</p>
             <button class="button primary">Primary</button>
             <button class="button secondary">Secondary</button>
             <button class="button success">Success</button>
@@ -267,16 +266,9 @@
             <button class="button danger">Danger</button>
             <button class="button dark">Dark</button>
             <button class="button light">Light</button>
-            <h3>Rounded Buttons</h3>
-            <button class="button rounded primary">Primary</button>
-            <button class="button rounded secondary">Secondary</button>
-            <button class="button rounded success">Success</button>
-            <button class="button rounded info">Info</button>
-            <button class="button rounded warning">Warning</button>
-            <button class="button rounded danger">Danger</button>
-            <button class="button rounded dark">Dark</button>
-            <button class="button rounded light">Light</button>
-            <h3>Outline Buttons</h3>
+
+            <h3>Outlined Buttons</h3>
+            <p>Outlined buttons have lower emphasis and are used for less important actions.</p>
             <button class="button outline primary">Primary</button>
             <button class="button outline secondary">Secondary</button>
             <button class="button outline success">Success</button>
@@ -285,6 +277,18 @@
             <button class="button outline danger">Danger</button>
             <button class="button outline dark">Dark</button>
             <button class="button outline light">Light</button>
+
+            <h3>Rounded Buttons</h3>
+            <p>Standard and outlined buttons can be rounded for extra style.</p>
+            <button class="button rounded primary">Primary</button>
+            <button class="button rounded outline secondary">Secondary</button>
+            <button class="button rounded success">Success</button>
+            <button class="button rounded outline info">Info</button>
+            <button class="button rounded warning">Warning</button>
+            <button class="button rounded outline danger">Danger</button>
+            <button class="button rounded dark">Dark</button>
+            <button class="button rounded outline light">Light</button>
+            
         </section>
         <section id="cards">
             <h2>Cards</h2>
@@ -301,14 +305,14 @@
         <h1>CSS</h1>
         <h2>Sass</h2>
         <p><b>Sass</b> stands for <b>S</b>yntactically <b>a</b>wesome <b>s</b>tyle <b>s</b>heets.</p>
-        <p>Sass is the official CBORD CSS preprocessor and it is recommended that all developers integrate 
-            Sass into their projects Sass is one of the most powerful and versatile CSS preprocessors out 
-            there. It makes writing CSS faster, more efficient, and easier to maintain. <img class="image right" alt="Sass" src="/images/Sass.svg"/></p>
+        <p><a href="https://sass-lang.com/" target="_blank">Sass</a> is the official CBORD CSS preprocessor and it is recommended that all developers integrate 
+            Sass into their projects. Sass is one of the most powerful and versatile CSS preprocessors out 
+            there. It makes writing CSS faster, more efficient, and easier to maintain. <a href="https://sass-lang.com/" target="_blank"><img class="image right" alt="Sass" src="/images/Sass.svg"/></a></p>
         <p>Sass does this by adding a lot of functionality that vanilla CSS lacks. This includes 
             variables, mixins, hierarchy, and much more.</p>
         <h2>BEM</h2>
         <p><b>BEM</b> is the <b>B</b>lock, <b>E</b>lement, <b>M</b>odifier methodology.</p>
-        <p>If you must use your own custom CSS, follow BEM guidelines.</p> <img class="image large right" src="/images/bem.svg" alt="BEM Logo">
+        <p>If you must use your own custom CSS, follow <a href="https://bem.info/" target="_blank">BEM guidelines</a></p> <a href="https://bem.info/" target="_blank"><img class="image large right" src="/images/bem.svg" alt="BEM Logo"></a>
         <p>A <b>block</b> is a functionally and logically independent component, for example a button: 
             <code class="code no-break">.btn { }</code>. A block can be thought of as a parent.</p>
         <p>An <b>element</b> is an item that cannot be placed outside of a block. Elements are indicated 

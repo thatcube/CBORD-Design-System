@@ -79,7 +79,7 @@ body {
 }
 
 .dark-text {
-    color: $dark;
+    color: $dark !important;
 }
 
 .sidebar { 
@@ -192,6 +192,9 @@ body {
             top: -0.5rem;
             left: 0;
         }
+    }
+    h2 {
+        margin-top: 5rem;
     }
 }
 

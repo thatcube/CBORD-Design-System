@@ -133,7 +133,8 @@
     }
     &.outline {
         background: $white;
-        border: 2px solid;
+        border: 1px solid;
+        box-shadow: none;
     }
 }
 
