@@ -695,6 +695,12 @@ body {
   color: #333;
 }
 
+@media all and (max-width: 767.99px) {
+  .title {
+    font-size: 1.4em;
+  }
+}
+
 .dark-text {
   color: #333;
 }
@@ -844,6 +850,21 @@ body {
 .indent {
   padding-left: 3rem;
   list-style: none;
+}
+
+.code {
+  background: #d8d8d8;
+  border-radius: 6px;
+  padding: 0.25em;
+}
+
+.code.font {
+  line-height: 2;
+  padding: 0.5em;
+}
+
+.no-break {
+  white-space: nowrap;
 }
 
 .menu-toggle {

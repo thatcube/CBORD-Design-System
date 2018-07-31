@@ -195,7 +195,7 @@
         <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
             system/browser cannot display it correctly. These are also great for performance.</p>
         <h3>Example font stack: </h3>
-        <code>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+        <code class="code font">font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", 
             "Segoe UI Emoji", "Segoe UI Symbol";</code>
     </article>
     <article id="components">
@@ -247,6 +247,18 @@
             there. It makes writing CSS faster, more efficient, and easier to maintain. <img class="image right" alt="Sass" src="/images/Sass.svg"/></p>
         <p>Sass does this by adding a lot of functionality that vanilla CSS lacks. This includes 
             variables, mixins, hierarchy, and much more.</p>
+        <h2>BEM</h2>
+        <p><b>BEM</b> is the <b>B</b>lock, <b>E</b>lement, <b>M</b>odifier methodology.</p>
+        <p>If you must use your own custom CSS, follow BEM guidelines.</p> <img class="image large right" src="/images/bem.svg" alt="BEM Logo">
+        <p>A <b>block</b> is a functionally and logically independent component, for example a button: 
+            <code class="code no-break">.btn { }</code>. A block can be thought of as a parent.</p>
+        <p>An <b>element</b> is an item that cannot be placed outside of a block. Elements are indicated 
+            by two underscores following the name of the block, such as: <code class="code no-break">.btn__price { }</code>.</p>
+        <p>A <b>modifier</b> is an entity that defines the appearance or behavior of a block or element. This 
+            is indicated by appending two hyphens to the name of the block, such as: <code class="code no-break">btn--blue</code>.</p>
+        <p>BEM is much more extensive than what is summarized here. To read more, 
+            visit the <a href="https://bem.info/" target="_blank">official BEM website</a>.</p>
+
     </article>
     <article id="toneandvoice">
         <h1>Tone and Voice</h1>
@@ -296,10 +308,16 @@
     <article id="images">
         <h1>Images, Icons, and Logos</h1>
         <h2>Images</h2>
-        <p><b>Use SVG images</b> whenever possible. They are supported by all modern browsers and are less resource intensive 
-            than common image formats such as JPG, PNG, and TIFF. SVG images are also infinitely scalable and look great on 
-            every modern device. The Font Awesome icon framework supports SVG’s natively and it is expected that if your team 
-            is using <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, they are using the SVG icons if possible.</p>
+        <p><b>Use SVG images</b> whenever possible. Why?
+            <ul>
+                <li>Small file sizes that compress well</li>
+                <li>Scales to any size without losing clarity (except very tiny)</li>
+                <li>Looks great on retina displays</li>
+                <li>Design control like interactivity and filters</li>
+            </ul>
+        </p>
+        <p>The Font Awesome icon framework supports SVG’s natively and it is expected that if your team 
+            is using <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, they are using the SVG icons (if possible).</p>
         <h2>Icons</h2>
         <p><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> is the approved and official icon resource for CBORD.</p>
         <p>All applications not using Ionic should try to keep up to date with the latest icons that Font Awesome has to offer. Since 
@@ -315,8 +333,6 @@
             </ul>
         </p>
     </article>
-    <h2>Testing this</h2>
-    <p>here's some content</p>
     </div>
 </div>
 </body>

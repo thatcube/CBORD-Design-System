@@ -57,6 +57,9 @@ body {
 .title {
     margin-left: 4rem;
     color: $dark;
+    @media all and (max-width: 767.99px) {
+        font-size: 1.4em;
+    }
 }
 
 .dark-text {
@@ -173,6 +176,19 @@ body {
 .indent {
     padding-left: 3rem;
     list-style: none;
+}
+
+.code {
+    background: rgb(216, 216, 216);
+    border-radius: $border-radius-base;
+    padding: 0.25em;
+    &.font {
+        line-height: 2;
+        padding: 0.5em;
+    }
+}
+.no-break {
+    white-space: nowrap;
 }
 
 $toggle-size: 32px;
