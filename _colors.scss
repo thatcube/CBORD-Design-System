@@ -12,12 +12,24 @@
     justify-content: center;
     width: 10.3125em;
     height: 7.5em;
+    @media all and (max-width: 767.99px) {
+        width: 9em;
+        height: 6em;
+    }
     transition: transform 250ms;
     margin-bottom: 0.5rem;
+    button {
+        opacity: 0;
+        transition: .3s ease opacity;
+    }
     &:hover {
         cursor: pointer;
         transform: scale(1.1);
+        button {
+            opacity: 1;
+        }
     }
+
 }
 
 .color {
@@ -48,4 +60,11 @@
 }
 .danger {
     background: $danger;
+}
+.dark {
+    background: $dark;
+}
+.light {
+    background: $white;
+    border: 1px solid #dfe3e6;
 }

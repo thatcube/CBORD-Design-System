@@ -1,6 +1,12 @@
 @import "normalize";
 @import "variables";
+@import "buttons";
+@import "card";
 @import "colors";
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -10,16 +16,67 @@ body {
 .grid {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 0.4fr 1.6fr;
-    grid-template-rows: 0.2fr 1.8fr;
-    grid-template-areas: "sidebar content" "sidebar content";
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-rows: 0.01fr 1.99fr;
+    grid-template-areas: "sidebar header" "sidebar content";
+    @media all and (max-width: 1199.99px) {
+        grid-template-columns: 1.6fr;
+        grid-template-rows: 0fr 1.8fr;
+        grid-template-areas: "header" "content";
+    }
 }
+
+.menu {
+    @media all and (max-width: 1199.99px) {
+        transition: .3s ease transform;
+        background: white;
+        transform: translateX(-100%);
+        &.open {
+            transform: translateX(0);
+        }
+    }
+    height: 100vh;
+    margin: 0;
+    box-shadow: 0 0 3rem rgba($black, 0.1);
+}
+
+.header {
+    grid-area: header;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    @media all and (max-width: 1199.99px) {
+        position: fixed;
+        width: 100vw;
+        height: 4rem;
+        background: white;
+        box-shadow: 0 0 3rem rgba($black, 0.1);
+    }
+}
+
+.title {
+    margin-left: 4rem;
+    color: $dark;
+}
+
+.dark-text {
+    color: $dark;
+}
+
 .sidebar { 
     grid-area: sidebar;
     position: fixed;
+    height:100vh;
+    @media all and (max-width: 1199.99px) {
+        z-index: -1;
+        &.open {
+            z-index: 1;
+        }
+        top: 4rem;
+    }
     ul {
         list-style: none;
-        padding: 0.5rem;
+        padding: 0.5rem 1.25rem;
     }
     li a {
         color: black;
@@ -41,6 +98,10 @@ body {
             }
         }
     }
+    li.active a {
+        color: $primary;
+        transform: translateX(3px);
+    }
     .submenu a {
         color: $gray;
         padding: 0.5rem;
@@ -49,12 +110,133 @@ body {
 
 .content { 
     grid-area: content;
+    
+    margin: 2rem;
+    @media all and (max-width: 1199.99px) {
+        margin-top: 3rem;
+    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    article {
+        margin-top: 5rem;
+    }
+}
+
+.image {
+    width: 8rem;
+    &.right {
+        float: right;
+    }
+    &.large {
+        width: 12rem;
+    }
+}
+
+.content-center {
     max-width: 768px;
 }
 
-p {
+.content {
+    p, ul, ol {
     color: $gray;
     line-height: 2;
     font-size: 1.2em;
     letter-spacing: -0.015em;
+    a {
+        font-weight: 600;
+        color: $primary;
+        text-decoration: none;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+    p {
+        font-size: inherit;
+    }
+    }
+    h1 {
+        position: relative;
+        &:before {
+            content: '';
+            width: 5rem;
+            height: 0.3rem;
+            display: block;
+            background-color: $primary;
+            position: absolute;
+            top: -0.5rem;
+            left: 0;
+        }
+    }
+}
+
+.indent {
+    padding-left: 3rem;
+    list-style: none;
+}
+
+$toggle-size: 32px;
+$bar-size: $toggle-size / 8;
+$bar-space: ($toggle-size - ($bar-size * 5)) / 2;
+$bar2-top: $bar-size + $bar-space;
+$bar3-top: $bar2-top * 2;
+
+.menu-toggle {
+    display: block;
+    width: $toggle-size;
+    height: $toggle-size;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    @media all and (min-width: 1200px) {
+        display: none;
+    }
+}
+.menu-toggle span {
+    background-color: black;
+    width: 100%;
+    height: $bar-size;
+    border-radius: $bar-size / 4;
+    display: block;
+    position: absolute;
+    left: 0;
+    content: '';
+    transition: .5s ease-in-out;
+}
+
+.menu-toggle {
+    span {
+        &:nth-child(1) {
+            top: $bar-size;
+            transform-origin: left center;
+        }
+        &:nth-child(2) {
+            top: $bar2-top + $bar-size;
+            transform-origin: left center;
+        }
+        &:nth-child(3) {
+            top: $bar3-top + $bar-size;
+            transform-origin: left center;
+        }
+    }
+    &.open span {
+        &:nth-child(1) {
+            transform: rotate(45deg);
+            top: -($toggle-size / 32) + $bar-size;
+            left: $bar-size;
+        }
+        &:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+            top: $bar3-top + ($toggle-size / 32) + $bar-size;
+            left: $bar-size;
+        }
+    }
 }

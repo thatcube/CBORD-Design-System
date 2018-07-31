@@ -6,11 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CBORD Developer Style Guide</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="grid">
+
+    <div class="header">
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1 class="title">CBORD Style Guide</h1>
+    </div>
+
     <nav class="sidebar">
         <ul class="menu">
-            <li>
+            <li class="active">
                 <a href="#introduction">Introduction</a>
             </li>
             <li>
@@ -36,89 +47,281 @@
                 <a href="#css">CSS</a>
             </li>
             <li>
-                <a href="#general">Tone and Voice</a>
+                <a href="#toneandvoice">Tone and Voice</a>
             </li>
             <li>
-                <a href="#introduction">Images, Icons, and Logos</a>
+                <a href="#images">Images, Icons, and Logos</a>
             </li>
         </ul>
     </nav>
+    
     <div class="content">
+    <div class="content-center">
     <article id="introduction">
         <h1>Introduction</h1>
-        <p>Having a strong, modern, and stylistic visual identity helps to solidify CBORD as a leader in higher education, healthcare, senior living, and general business industries. Keeping that identity consistent helps to visually reinforce CBORD’s reputation for quality and innovation. This guide is intended to help all developers adhere to CBORD’s visual identity and design goals.</p>
-        <p>Creating a style guide is especially important to CBORD because of the number of products that we offer. Having multiple different backend solutions, development teams, and industries creates unwanted separation. This guide aims to stylistically unify backend applications—especially as the number of users is multiplied. Brand awareness should happen at the application level—not just the marketing level.</p>
+        <p>Having a strong, modern, and stylistic visual identity helps to solidify CBORD 
+            as a leader in higher education, healthcare, senior living, and general business 
+            industries. Keeping that identity consistent helps to visually reinforce CBORD’s 
+            reputation for quality and innovation. This guide is intended to help all developers 
+            adhere to CBORD’s visual identity and design goals.</p>
+        <p>Creating a style guide is especially important to CBORD because of the number of products 
+            that we offer. Having multiple different backend solutions, development teams, and industries 
+            creates unwanted separation. This guide aims to stylistically unify backend applications—especially 
+            as the number of users is multiplied. Brand awareness should happen at the application level—not 
+            just the marketing level.</p>
         <h2>Intended Audience</h2>
-        <p>This is a style guide intended for CBORD developers. No matter your position in Development, understanding the overall look and feel across multiple product lines is important to ensure CBORD’s visual identity is consistent. A basic understanding of web interfaces and experience working with frontend frameworks (such as Bootstrap) is expected for anyone reading this guide.</p>
-        <p>This guide may also be helpful to anyone else who works with CBORD’s software, such as a person on the Support team or those responsible for marketing CBORD’s products.</p>
+        <p>This is a style guide intended for CBORD developers. No matter your position in Development, 
+            understanding the overall look and feel across multiple product lines is important to ensure 
+            CBORD’s visual identity is consistent. A basic understanding of web interfaces and experience 
+            working with frontend frameworks (such as Bootstrap) is expected for anyone reading this guide.</p>
+        <p>This guide may also be helpful to anyone else who works with CBORD’s software, such as a person 
+            on the Support team or those responsible for marketing CBORD’s products.</p>
     </article>
     <article id="general">
         <h1>General</h1>
-        <p>If your team is already using Bootstrap, or any other framework, it is acceptable to continue using the framework. However, the default styles should be updated/modified to follow modern, Material Design principles and guidelines. The new style should coincide with the other various designs and guidelines stated within this document.</p>
+        <p>If your team is already using Bootstrap, or any other framework, it is acceptable to continue 
+            using the framework. However, the default styles should be updated/modified to follow modern, 
+            Material Design principles and guidelines. The new style should coincide with the other various 
+            designs and guidelines stated within this document.</p>
+        <h2>User First</h2>
+        <p>
+            CBORD has a user-first mentality. When making any design decisions, consider the intended user 
+            and how they might perceive the changes.
+        </p>
+        <p>
+            Design choices should be made to enhance the user experience—be sure to evaluate the consequences 
+            of a decision before it causes unintended issues.
+        </p>
     </article>
     <article id="colors">
         <h1>Colors</h1>
         <div class="colors__list">
+
             <div class="color">
                 <div class="color__example primary">
+                    <button value="heyo" class="button copy" data-clipboard-text="#005cb9">Copy HEX</button>
                 </div>
                 <p>primary</p>
-                <p>#005cb9</p>
+                <p id="primary">#005cb9</p>
             </div>
 
             <div class="color">
                 <div class="color__example success">
+                    <button class="button copy" data-clipboard-text="#008728">Copy HEX</button>
                 </div>
                 <p>success</p>
                 <p>#008728</p>
             </div>
 
             <div class="color">
-                <div class="color__example info">                
+                <div class="color__example info">
+                    <button class="button copy" data-clipboard-text="#4ca5ff">Copy HEX</button>              
                 </div>
                 <p>info</p>
                 <p>#4ca5ff</p>
             </div>
 
             <div class="color">
-                <div class="color__example warning"></div>
+                <div class="color__example warning">
+                    <button class="button copy" data-clipboard-text="#f7ba45">Copy HEX</button>
+                </div>
                 <p>warning</p>
                 <p>#f7ba45</p>
             </div>
 
             <div class="color">
-                <div class="color__example danger"></div>
+                <div class="color__example danger">
+                    <button class="button copy" data-clipboard-text="#b80000">Copy HEX</button>
+                </div>
                 <p>danger</p>
                 <p>#b80000</p>
+            </div>
+            
+            <div class="color">
+                <div class="color__example dark">
+                    <button class="button copy" data-clipboard-text="#333">Copy HEX</button>
+                </div>
+                <p>dark</p>
+                <p>#333</p>
+            </div>
+            <div class="color">
+                <div class="color__example light">
+                    <button class="button copy" data-clipboard-text="#fff">Copy HEX</button>
+                </div>
+                <p>light</p>
+                <p>#fff</p>
             </div>
         </div>
     </article>
     <article id="accessibility">
         <h1>Accessibility</h1>
+        <p>CBORD apps should be accessibile. Every application should follow 
+            <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG 2.0</a> 
+            guidelines at a level AA conformance level.</p>
+        <p>To quickly and easily check accessibility for a web application, install the 
+            <a href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc" 
+            target="_blank">Siteimprove Accessibility Checker for Chrome</a>. Unfortunately, this tool is only available 
+            for Google Chrome at the time of writing this.</p>
+        <p>If you’re not a fan of that plugin, or don’t use chrome, you can view the very extensive 
+            <a href="https://www.w3.org/WAI/ER/tools/" target="_blank">W3C Web Accessibility Evalutation Tools List</a>. 
+            One tool that often receives high praise, and for good reason, is the <a href="https://wave.webaim.org/extension/" 
+            target="_blank">WAVE web accessibility evaluation tool</a>. The interface is a bit outdated, but it serves its 
+            purpose well and is recommended as an alternative to the Siteimprove Accessibility Checker.</p>
     </article>
     <article id="typography">
         <h1>Typography</h1>
+        <p>Roboto by Google is the official CBORD web font.
+                <b><i>It is recommended to self-host Roboto</b></i> if you are not already. By hosting Roboto, 
+                CBORD does not rely on Google to host the font and it can still be used offline. Hosting is easy to do using the <a href="http://google-webfonts-helper.herokuapp.com/fonts" target="_blank">Google Webfonts Helper Tool</a>.
+                Use the follow procedure to download and host Roboto:
+                <ol>
+                    <li>Search for ‘Roboto’ in the search box</li>
+                    <li>Select the ‘latin’ charset</li>
+                    <li>Check every style</li>
+                    <li>Make sure the ‘Best Support’ option is selected for browser support.</li>
+                    <li>Download the files and unzip them</li>
+                    <li>Create a CSS file within the unzipped folder</li>
+                    <li>Copy and paste the CSS that was generated on the tool website into the CSS file you just created</li>
+                    <li>Link the CSS file to your project</li>
+                </ol>
+                <p><b>Do</b> link every font style. You can verify this by using CSS to apply a drastic font-weight 
+                    (such as 100 or 900) to an element on the page. If the font changes and matches the style shown on the 
+                    image above, then it is linked correctly. Properly linking all the Roboto font styles ensures that it 
+                    renders the same on every device or browser.</p>
+
+                <p><b>Do not</b> only link one style of the Roboto font-face, such as ‘Roboto Regular.’ Even though modern 
+                    browsers can render higher font weights, italics, and styles, each browser does it differently.</p>
+        <h2>Fallback Fonts</h2>
+        <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
+            system/browser cannot display it correctly. These are also great for performance.</p>
+        <h3>Example font stack: </h3>
+        <code>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+            "Segoe UI Emoji", "Segoe UI Symbol";</code>
     </article>
     <article id="components">
         <h1>Components</h1>
-        <section id="buttons">
+        <section class="buttons" id="buttons">
             <h2>Buttons</h2>
+            <h3>Standard Buttons</h3>
+            <button class="button primary">Primary</button>
+            <button class="button success">Success</button>
+            <button class="button info">Info</button>
+            <button class="button warning">Warning</button>
+            <button class="button danger">Danger</button>
+            <button class="button dark">Dark</button>
+            <button class="button light">Light</button>
+            <h3>Rounded Buttons</h3>
+            <button class="button rounded primary">Primary</button>
+            <button class="button rounded success">Success</button>
+            <button class="button rounded info">Info</button>
+            <button class="button rounded warning">Warning</button>
+            <button class="button rounded danger">Danger</button>
+            <button class="button rounded dark">Dark</button>
+            <button class="button rounded light">Light</button>
+            <h3>Outline Buttons</h3>
+            <button class="button outline primary">Primary</button>
+            <button class="button outline success">Success</button>
+            <button class="button outline info">Info</button>
+            <button class="button outline warning">Warning</button>
+            <button class="button outline danger">Danger</button>
+            <button class="button outline dark">Dark</button>
+            <button class="button outline light">Light</button>
         </section>
         <section id="cards">
             <h2>Cards</h2>
+            <section class="card">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-content">Here is some example content for a card that you could create. 
+                    In bootstrap this is a panel. I don't really know what to put in here so I'm just 
+                    going to keep typing. I hope you're having a great day. Thanks for reading this all 
+                    the way through - Brandon.</p>
+            </section>
         </section>
     </article>
     <article id="css">
         <h1>CSS</h1>
+        <h2>Sass</h2>
+        <p><b>Sass</b> stands for <b>S</b>yntactically <b>a</b>wesome <b>s</b>tyle <b>s</b>heets.</p>
+        <p>Sass is the official CBORD CSS preprocessor and it is recommended that all developers integrate 
+            Sass into their projects Sass is one of the most powerful and versatile CSS preprocessors out 
+            there. It makes writing CSS faster, more efficient, and easier to maintain. <img class="image right" alt="Sass" src="/images/Sass.svg"/></p>
+        <p>Sass does this by adding a lot of functionality that vanilla CSS lacks. This includes 
+            variables, mixins, hierarchy, and much more.</p>
     </article>
     <article id="toneandvoice">
         <h1>Tone and Voice</h1>
+        <p>Simply looking like a CBORD app is not enough—your application should sound like it too. 
+            The voice and tone within an application are an important aspect of CBORD’s identity and should 
+            be consistent across all products.</p>
+        <h2>Tone</h2>
+        <p>Tone is <i class="dark-text">how</i> you speak. It expresses your attitude in regards to the user 
+            and the content of the application. When creating UI content, no matter what it is, you should do 
+            so in a clear, confident, and engaging tone.</p>
+        <h2>Voice</h2>
+        <p>Voice is <i class="dark-text">what</i> you are speaking about. CBORD’s voice is friendly and familiar, 
+            but still straightforward and to the point. The priority is to help the user accomplish tasks, work 
+            efficiently, and feel confident in user interface actions. Voice should inform the user without confusion 
+            or clutter.</p>
+        <h2>Be Concise</h2>
+        <p>
+            <ul>
+                <li>While details can add to an interface, be wary of length. Long chunks of text become 
+                    difficult to read and sometimes convey pretension.</li>
+                <li>Functional text on an application, like a navigation or card header, should be brief.</li>
+            </ul>
+        </p>
+        <h2>Writing Style</h2>
+        <p>
+            <ul>
+                <li>Use the <b>active voice</b>—avoid the passive voice.</li>
+                <p>When using active voice, the subject of the sentence does the action. In passive voice, the subject 
+                    of the sentence has the action done to it.
+                <li class="indent"><b>Yes:</b> The user clicked the button.</li>
+                <li class="indent"><b>No:</b> The button was clicked by the user.</li>
+                </p>
+                <li>Your writing should be concise, direct, clear, and positive; avoid negative writing.</li>
+                <li>Avoid slang or jargon—write in plain English.</li>
+            </ul>
+        </p>
+        <h2>User First</h2>
+        <p>
+            <ul>
+                <li>CBORD prides itself on its user-first mentality. Before writing, consider what state of mind the user 
+                    will likely have.</li>
+                <li>The overall tone and voice should not change, but you should still cater the content to the specific user 
+                    you are trying to reach.</li>
+            </ul>
+        </p>
     </article>
     <article id="images">
         <h1>Images, Icons, and Logos</h1>
+        <h2>Images</h2>
+        <p><b>Use SVG images</b> whenever possible. They are supported by all modern browsers and are less resource intensive 
+            than common image formats such as JPG, PNG, and TIFF. SVG images are also infinitely scalable and look great on 
+            every modern device. The Font Awesome icon framework supports SVG’s natively and it is expected that if your team 
+            is using <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, they are using the SVG icons if possible.</p>
+        <h2>Icons</h2>
+        <p><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> is the approved and official icon resource for CBORD.</p>
+        <p>All applications not using Ionic should try to keep up to date with the latest icons that Font Awesome has to offer. Since 
+            the release of Font Awesome 5, there are now SVG icons.</p>        
+        <p><a href="http://ionicons.com/" target="_blank">Ionicons</a> are also an acceptable option. These icons should be utilized if your team is using the Ionic framework.</p>
+        <h2>Logos</h2>
+        <p>You can download the Official CBORD Logo via the following links:
+            <img class="image large right" src="/images/cbord_logo.png" alt="CBORD Logo">
+            <ul>
+                <li><a download="cbord_logo.svg" href="/images/cbord_logo.svg" title="CBORD Logo">SVG</a></li>
+                <li><a download="cbord_logo.png" href="/images/cbord_logo.png" title="CBORD Logo">PNG</a></li>
+                <li><a download="cbord_logo.ai" href="/images/cbord_logo.ai" title="CBORD Logo">Adobe Illustration (.ai)</a></li>
+            </ul>
+        </p>
     </article>
     <h2>Testing this</h2>
     <p>here's some content</p>
     </div>
+</div>
 </body>
+<footer>
+    <script src="/clipboard.min.js"></script>
+    <script src="/script.js"></script>
+</footer>
 </html>
