@@ -225,6 +225,7 @@ $logo-text-color: #414042;
 
 .image {
     width: 8rem;
+    margin: 1rem;
     &.right {
         float: right;
     }
@@ -256,6 +257,9 @@ $logo-text-color: #414042;
     p {
         font-size: inherit;
     }
+    }
+    ul {
+        list-style: circle inside;
     }
     h1 {
         position: relative;

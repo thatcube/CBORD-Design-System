@@ -4,6 +4,7 @@
     background: $white;
     margin-bottom: 1rem;
     line-height: 0;
+    transition: transform 0.3s ease;
     &__img {
         border-radius: 0;
         &--top {
@@ -23,5 +24,8 @@
     }
     &__header {
         padding: 1rem 1.875rem;
+    }
+    &:hover {
+        transform: scale(1.01);
     }
 }

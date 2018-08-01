@@ -1,13 +1,10 @@
 .button {
-    display: inline-flex;
     cursor: pointer;
-    height: 34px;
-    justify-content: center;
-    align-items: center;
     border: none;
     border-radius: $border-radius-base;
     transition: .3s ease box-shadow;
-    padding: 0 1em;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
     &.primary {
         @include standard-button($white, $primary);
         &.outline {
