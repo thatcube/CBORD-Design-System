@@ -42,6 +42,7 @@
                 <ul class="submenu">
                     <li><a href="#buttons">Buttons</a></li>
                     <li><a href="#cards">Cards</a></li>
+                    <li><a href="#controls">Controls</a></li>
                 </ul>
             </li>
             <li>
@@ -248,8 +249,8 @@
         <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
             system/browser cannot display it correctly. These are also great for performance.</p>
         <h3>Example font stack: </h3>
-        <code class="code font">font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", 
-            "Segoe UI Emoji", "Segoe UI Symbol";</code>
+        <pre><code class="code font">font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+            "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
     </article>
     <article id="components">
         <h1>Components</h1>
@@ -291,13 +292,129 @@
         </section>
         <section id="cards">
             <h2>Cards</h2>
-            <section class="card">
-                <h3 class="card-title">Card Title</h3>
-                <p class="card-content">Here is some example content for a card that you could create. 
-                    In bootstrap this is a panel. I don't really know what to put in here so I'm just 
-                    going to keep typing. I hope you're having a great day. Thanks for reading this all 
-                    the way through - Brandon.</p>
-            </section>
+            <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <section class="card">
+                    <img class="card__img--top" src="/images/stock3.jpg" alt="stock photo example">
+                    <div class="card__body">
+                    <h3 class="card__title">Card Title</h3>
+                    <h4 class="card__subtitle">Subtitle</h4>
+                    <p class="card__text">Cards contain actions and content about a single object. This card has an action button.</p>
+                    <button class="button secondary outline">Action</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <section class="card">
+                    <img class="card__img card__img--top" src="/images/stock2.jpg" alt="stock photo example">
+                    <div class="card__body">
+                    <h3 class="card__title">Card Title</h3>
+                    <h4 class="card__subtitle">Subtitle</h4>
+                    <p class="card__text">This card has the image at the top. This is the body of the card. I hope you're having 
+                        a great day.</p>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </section>
+        <section class="controls" id="controls">
+            <h2>Controls</h2>
+            <div class="row control-row">
+                <div class="col-xs">
+                    <h3>Checkboxes</h3>
+                    <div class="row">
+                    <div class="col-xs">
+                    <div class="checkbox">
+                        <input name="pizza" id="pizza" type="checkbox" value="1" checked="checked">
+                        <label for="pizza">
+                            <div class="checkbox-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+                            </div>
+                            <span class="checkbox-text">
+                            Pizza</span>
+                        </label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs">
+                    <div class="checkbox">
+                        <input name="pasta" id="pasta" type="checkbox" value="1">
+                        <label for="pasta">
+                            <div class="checkbox-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+                            </div>
+                            <span class="checkbox-text">
+                            Pasta</span>
+                        </label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs">
+                    <div class="checkbox">
+                        <input name="pancakes" id="pancakes" type="checkbox" value="1" disabled>
+                        <label for="pancakes">
+                            <div class="checkbox-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+                            </div>
+                            <span class="checkbox-text">
+                            Pancakes</span>
+                        </label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs">
+                    <div class="checkbox">
+                        <input name="pancakes" id="pancakes" type="checkbox" value="1" disabled checked="checked">
+                        <label for="pancakes">
+                            <div class="checkbox-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+                            </div>
+                            <span class="checkbox-text">
+                            Pancakes</span>
+                        </label>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-xs">
+                    <h3>Radio Buttons</h3>
+                    <div class="row">
+                    <div class="col-xs">
+                        <input name="food" id="banana" type="radio" checked="checked">
+                        <label for="banana">
+                            Banana
+                        </label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs">
+                        <input name="food" id="butter" type="radio">
+                        <label for="butter">
+                            Butter
+                        </label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs">
+                        <input name="food2" id="bread" type="radio" disabled>
+                        <label for="bread">
+                            Bread
+                        </label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs">
+                        <input name="food2" id="beans" type="radio" checked="checked" disabled>
+                        <label for="beans">
+                            Beans
+                        </label>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </article>
     <article id="css">

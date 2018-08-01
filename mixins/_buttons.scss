@@ -1,0 +1,34 @@
+@mixin standard-button($color, $background) {
+    color: $color;
+    background: $background;
+    &:hover, &:focus{
+        background: mix($background, $black, 90%);
+    }
+    &:hover {
+        box-shadow: 0 2px 10px 0 rgba(41, 41, 41, .3);
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &:active {
+        background: mix($background, $black, 80%);
+        box-shadow: none;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px mix(rgba(0,0,0, 0.185), rgba($background, .35), 15%), 0 3px 15px rgba($background, 0.2), 0 2px 5px rgba(0,0,0, 0.1);
+    }
+}
+
+@mixin outline-button($hover-text-color, $text-color, $background) {
+    background: $white;
+    border: 1px solid;
+    border-color: $background;
+    color: $text-color;
+    &:hover {
+        background: $background;
+        color: $hover-text-color;
+
+        box-shadow: none;
+    }
+}
