@@ -29,6 +29,10 @@ body {
     background: $background;
 }
 
+h3 {
+    font-weight: 600;
+}
+
 .grid {
     display: grid;
     min-height: 100vh;
@@ -176,7 +180,7 @@ $logo-text-color: #414042;
     li a {
         color: black;
         display: block;
-        padding: 1.5rem 1.75rem;
+        padding: 1rem 1.75rem;
         text-decoration: none;
         transition: .3s ease transform;
         border-radius: 0.5rem;
@@ -245,7 +249,7 @@ $logo-text-color: #414042;
 
 .content {
     p, ul, ol {
-    color: $gray;
+    color: $gray-darker;
     line-height: 2;
     letter-spacing: -0.015em;
     a {
