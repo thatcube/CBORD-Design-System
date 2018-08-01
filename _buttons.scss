@@ -3,7 +3,7 @@
     border: none;
     border-radius: $border-radius-base;
     transition: .3s ease box-shadow;
-    padding: 0.75rem 1.25rem;
+    padding: 0.625rem 1.25rem;
     font-size: 0.875rem;
     &.primary {
         @include standard-button($white, $primary);
@@ -42,25 +42,13 @@
         }
     }
     &.light {
-        border: 1px solid #e9ecef;
         @include standard-button($dark, $white);
         &.outline {
             @include outline-button($black, $gray, #e9ecef);
+            border: 1px solid #cccccc;
         }
     }
     &.dark {
-        background: $dark;
-        color: $white;
-        &:hover {
-            background: mix($dark, $white, 90%);
-        }
-        &.outline {
-            border-color: $dark;
-            color: $dark;
-            &:hover {
-                color: $white;
-            }
-        }
         @include standard-button($white, $dark);
         &.outline {
             @include outline-button($white, $dark, $dark);

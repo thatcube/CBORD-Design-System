@@ -2,7 +2,7 @@
     color: $color;
     background: $background;
     &:hover, &:focus{
-        background: mix($background, $black, 90%);
+        background: mix($background, $white, 90%);
     }
     &:hover {
         box-shadow: 0 2px 10px 0 rgba(41, 41, 41, .3);
@@ -11,7 +11,7 @@
         }
     }
     &:active {
-        background: mix($background, $black, 80%);
+        background: mix($background, $white, 80%);
         box-shadow: none;
     }
     &:focus {
