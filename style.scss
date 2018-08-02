@@ -1,14 +1,5 @@
-@import "normalize";
-@import "variables";
-
-@import "mixins/buttons";
-
-@import "buttons";
-@import "card";
-@import "checkboxes";
+@import "CBORD-style/CBORD-style";
 @import "colors";
-@import "grid";
-@import "radio";
 
 
 $breakpoint: 991.98px;
@@ -56,9 +47,10 @@ h3 {
             transform: translateX(0);
         }
     }
+    background: $white;
     height: 100vh;
     margin: 0;
-    box-shadow: 0 0 3rem rgba($black, 0.1);
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1)
 }
 
 .header {
@@ -99,18 +91,24 @@ $logo-text-color: #414042;
     font-weight: 400;
     font-size: 2.3rem;
     text-transform: lowercase;
-    @media all and (min-width: 350px) and (max-width: 415px) {
-        width: 16rem;
+    // @media all and (min-width: 350px) and (max-width: 415px) {
+    //     width: 16rem;
+    // }
+    img {
+        margin-right: 1rem;
     }
     @media all and (max-width: 767.99px) {
         font-size: 1.4em;
+        margin-left: 3.5rem;
+        img {
+            width: 4.8rem;
+            margin: 0.5rem;
+        }
     }
     @media all and (min-width: $breakpoint) {
         display: none;
     }
-    img {
-        margin-right: 1rem;
-    }
+    
     &__content {
         &:before {
             display: none !important;
@@ -220,11 +218,14 @@ $logo-text-color: #414042;
     }
     article {
         margin-top: 10rem;
-        @media all and (max-width: $breakpoint) {
-            margin-top: 5rem;
-        }
         &:first-of-type {
             margin-top: 5rem;
+        }
+        @media all and (max-width: $breakpoint) {
+            margin-top: 5rem;
+            &:first-of-type {
+                margin-top: 2rem;
+            }
         }
     }
 }
@@ -238,6 +239,12 @@ $logo-text-color: #414042;
     &.large {
         width: 12rem;
     }
+    @media all and (max-width: 767.99px) {
+        width: 6rem;
+        &.large {
+            width: 8rem;
+        }
+    }
 }
 
 // .content-center {
@@ -250,7 +257,7 @@ $logo-text-color: #414042;
 .content {
     p, ul, ol {
     color: $gray-darker;
-    line-height: 2;
+    line-height: 1.8;
     letter-spacing: -0.015em;
     a {
         font-weight: 600;
@@ -266,6 +273,10 @@ $logo-text-color: #414042;
     }
     ul {
         list-style: circle inside;
+        @media all and (max-width: $breakpoint) {
+            padding: 0;
+            padding-left: 1rem;
+        }
     }
     h1 {
         position: relative;

@@ -1,0 +1,71 @@
+.button {
+    cursor: pointer;
+    border: none;
+    border-radius: $border-radius-base;
+    transition: .3s ease box-shadow;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    &.primary {
+        @include standard-button($white, $primary);
+        &.outline {
+            @include outline-button($white, $primary, $primary);
+        }
+    }
+    &.success {
+        @include standard-button($white, $success);
+        &.outline {
+            @include outline-button($white, $success, $success);
+        }
+    }
+    &.secondary {
+        @include standard-button($white, $secondary);
+        &.outline {
+            @include outline-button($white, $secondary, $secondary);
+        }
+    }
+    &.info {
+        @include standard-button(#2c2c2c, $info);
+        &.outline {
+            @include outline-button(#2c2c2c, #0074e8, $info);
+        }
+    }
+    &.warning {
+        @include standard-button(#2c2c2c, $warning);
+        &.outline {
+            @include outline-button(#2c2c2c, #a26b00, $warning);
+        }
+    }
+    &.danger {
+        @include standard-button(#f0f0f0, $danger);
+        &.outline {
+            @include outline-button(#f0f0f0, $danger, $danger);
+        }
+    }
+    &.light {
+        @include standard-button($dark, $white);
+        &.outline {
+            @include outline-button($black, $gray, #e9ecef);
+            border: 1px solid #cccccc;
+        }
+    }
+    &.dark {
+        @include standard-button($white, $dark);
+        &.outline {
+            @include outline-button($white, $dark, $dark);
+        }
+    }
+    &.rounded {
+        border-radius: 34px;
+    }
+}
+
+.buttons {
+    h3 {
+        margin-top: 3rem;
+        margin-bottom: 0.5rem;
+    }
+    .button {
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+    }
+}

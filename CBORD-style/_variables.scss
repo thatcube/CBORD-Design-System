@@ -1,0 +1,19 @@
+$gray: #757575;
+$gray-darker: mix($gray, black, 90%);
+$black: #000;
+$white: #fff;
+
+$primary: #005cb9;
+$secondary: #d63665;
+$success: #008728;
+$info: #4ca5ff;
+$warning: #f7ba45;
+$danger: #b80000;
+$dark: #333;
+
+$border-radius-small: .375rem;
+$border-radius-base: .625rem;
+$border-radius-large: 1rem;
+
+
+$background: mix(mix($primary, $white, 5%), #eee, 50%);
