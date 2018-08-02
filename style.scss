@@ -39,14 +39,6 @@ h3 {
 }
 
 .menu {
-    @media all and (max-width: $breakpoint) {
-        transition: .3s ease transform;
-        background: white;
-        transform: translateX(-100%);
-        &.open {
-            transform: translateX(0);
-        }
-    }
     background: $white;
     height: 100vh;
     margin: 0;
@@ -55,7 +47,7 @@ h3 {
 
 .header {
     grid-area: header;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     align-items: center;
     transition: .3s ease transform;
@@ -164,12 +156,17 @@ $logo-text-color: #414042;
     left: 0;
     height:100vh;
     width: 13rem;
+    transition: .5s cubic-bezier(.5, .25, .015, 1) transform;
     @media all and (max-width: $breakpoint) {
-        z-index: -1;
-        &.open {
-            z-index: 1;
-        }
+        z-index: 2;
+        // &.open {
+        //     z-index: 1;
+        // }
         top: 4rem;
+        transform: translateX(-100%);
+        &.open {
+            transform: translateX(0);
+        }
     }
     ul {
         list-style: none;
@@ -288,6 +285,7 @@ $logo-text-color: #414042;
     }
     h1 {
         position: relative;
+        z-index: -1;
         &:before {
             content: '';
             width: 5rem;
