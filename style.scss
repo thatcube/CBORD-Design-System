@@ -180,15 +180,20 @@ $logo-text-color: #414042;
         display: block;
         padding: 1rem 1.75rem;
         text-decoration: none;
-        transition: .3s ease transform;
-        border-radius: 0.5rem;
         font-weight: 500;
+        span {
+            display: inline-block;
+            transition: .3s ease transform;
+        }
         &:hover, &:focus {
-            color: $primary;
-            transform: translateX(3px);
+            background: rgba($black, 0.05);
+            span {
+                color: $primary;
+                transform: translateX(0.25rem);
+            }
         }
         &:focus {
-            box-shadow: 0 0 0 3px rgba($primary, 0.4);
+            box-shadow: inset 0 0 0 0.2em rgba($primary, 0.4);
             outline: none;
             &:hover {
                 box-shadow: none;
@@ -197,7 +202,10 @@ $logo-text-color: #414042;
     }
     li.active a {
         color: $primary;
-        transform: translateX(3px);
+        span {
+            color: $primary;
+            transform: translateX(3px);
+        }
     }
     .submenu {
         a {

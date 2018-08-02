@@ -23,36 +23,36 @@
     <nav class="sidebar">
         <ul class="menu">
             <li class="active">
-                <a href="#introduction">Introduction</a>
+                <a href="#introduction"><span>Introduction</span></a>
             </li>
             <li>
-                <a href="#general">General</a>
+                <a href="#general"><span>General</span></a>
             </li>
             <li>
-                <a href="#colors">Colors</a>
+                <a href="#colors"><span>Colors</span></a>
             </li>
             <li>
-                <a href="#accessibility">Accessibility</a>
+                <a href="#accessibility"><span>Accessibility</span></a>
             </li>
             <li>
-                <a href="#typography">Typography</a>
+                <a href="#typography"><span>Typography</span></a>
             </li>
             <li>
-                <a href="#components">Components</a>
+                <a href="#components"><span>Components</span></a>
                 <ul class="submenu">
-                    <li><a href="#buttons">Buttons</a></li>
-                    <li><a href="#cards">Cards</a></li>
-                    <li><a href="#controls">Controls</a></li>
+                    <li><a href="#buttons"><span>Buttons</span></a></li>
+                    <li><a href="#cards"><span>Cards</span></a></li>
+                    <li><a href="#controls"><span>Controls</span></a></li>
                 </ul>
             </li>
             <li>
-                <a href="#css">CSS</a>
+                <a href="#css"><span>CSS</span></a>
             </li>
             <li>
-                <a href="#toneandvoice">Tone and Voice</a>
+                <a href="#toneandvoice"><span>Tone and Voice</span></a>
             </li>
             <li>
-                <a href="#images">Images, Icons, and Logos</a>
+                <a href="#images"><span>Images, Icons, and Logos</span></a>
             </li>
         </ul>
     </nav>
@@ -99,7 +99,7 @@
 
             <div class="color">
                 <div class="color__example primary">
-                    <button class="button outline dark copy" data-clipboard-text="#005cb9">Copy HEX</button>
+                    <button class="button outline dark square copy" data-clipboard-text="#005cb9">Copy HEX</button>
                 </div>
                 <p class="dark-text">primary</p>
                 <p>#005cb9</p>
@@ -107,7 +107,7 @@
 
             <div class="color">
                 <div class="color__example secondary">
-                    <button class="button outline dark copy" data-clipboard-text="#d63665">Copy HEX</button>
+                    <button class="button outline dark square copy" data-clipboard-text="#d63665">Copy HEX</button>
                 </div>
                 <p class="dark-text">secondary</p>
                 <p>#d63665</p>
@@ -115,7 +115,7 @@
 
             <div class="color">
                 <div class="color__example success">
-                    <button class="button outline dark copy" data-clipboard-text="#008728">Copy HEX</button>
+                    <button class="button outline dark square copy" data-clipboard-text="#008728">Copy HEX</button>
                 </div>
                 <p class="dark-text">success</p>
                 <p>#008728</p>
@@ -123,7 +123,7 @@
 
             <div class="color">
                 <div class="color__example info">
-                    <button class="button outline dark copy" data-clipboard-text="#4ca5ff">Copy HEX</button>              
+                    <button class="button outline dark square copy" data-clipboard-text="#4ca5ff">Copy HEX</button>              
                 </div>
                 <p class="dark-text">info</p>
                 <p>#4ca5ff</p>
@@ -131,7 +131,7 @@
 
             <div class="color">
                 <div class="color__example warning">
-                    <button class="button outline dark copy" data-clipboard-text="#f7ba45">Copy HEX</button>
+                    <button class="button outline dark square copy" data-clipboard-text="#f7ba45">Copy HEX</button>
                 </div>
                 <p class="dark-text">warning</p>
                 <p>#f7ba45</p>
@@ -139,7 +139,7 @@
 
             <div class="color">
                 <div class="color__example danger">
-                    <button class="button outline dark copy" data-clipboard-text="#b80000">Copy HEX</button>
+                    <button class="button outline dark square copy" data-clipboard-text="#b80000">Copy HEX</button>
                 </div>
                 <p class="dark-text">danger</p>
                 <p>#b80000</p>
@@ -147,14 +147,14 @@
             
             <div class="color">
                 <div class="color__example dark">
-                    <button class="button outline light copy" data-clipboard-text="#333">Copy HEX</button>
+                    <button class="button outline light square copy" data-clipboard-text="#333">Copy HEX</button>
                 </div>
                 <p class="dark-text">dark</p>
                 <p>#333</p>
             </div>
             <div class="color">
                 <div class="color__example light">
-                    <button class="button outline dark copy" data-clipboard-text="#fff">Copy HEX</button>
+                    <button class="button outline dark square copy" data-clipboard-text="#fff">Copy HEX</button>
                 </div>
                 <p class="dark-text">light</p>
                 <p>#fff</p>
@@ -249,7 +249,8 @@
         <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
             system/browser cannot display it correctly. These are also great for performance.</p>
         <h3>Example font stack: </h3>
-        <pre><code class="code font">font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+        <pre><code class="code font">font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", 
+            Helvetica, Arial, sans-serif, "Apple Color Emoji", 
             "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
     </article>
     <article id="components">
@@ -280,14 +281,14 @@
 
             <h3>Rounded Buttons</h3>
             <p>Standard and outlined buttons can be rounded for extra style.</p>
-            <button class="button rounded primary">Primary</button>
-            <button class="button rounded outline secondary">Secondary</button>
-            <button class="button rounded success">Success</button>
-            <button class="button rounded outline info">Info</button>
-            <button class="button rounded warning">Warning</button>
-            <button class="button rounded outline danger">Danger</button>
-            <button class="button rounded dark">Dark</button>
-            <button class="button rounded outline light">Light</button>
+            <button class="button round primary">Primary</button>
+            <button class="button round outline secondary">Secondary</button>
+            <button class="button round success">Success</button>
+            <button class="button round outline info">Info</button>
+            <button class="button round warning">Warning</button>
+            <button class="button round outline danger">Danger</button>
+            <button class="button round dark">Dark</button>
+            <button class="button round outline light">Light</button>
             
         </section>
         <section id="cards">

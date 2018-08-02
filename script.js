@@ -5,7 +5,27 @@ $(document).ready(function() {
     $('.menu a').click(function closeNav() {
         $(".menu, .menu-toggle, .sidebar, .header, body").toggleClass("open");
     });
+
+    var clipboardButton = $('.color .button');
+    clipboardButton.on("click", function() {
+        $this = $(this);
+        $this.text('HEX Copied!');
+        setTimeout(backToCopyHex, 2000);
+        function backToCopyHex() {
+            $this.text('Copy HEX');
+        }
+    })
+
 });
+
+// function buttonTextCopied() {
+//     var clipboardButton = $('.color .button');
+//     clipboardButton.text('HEX Copied!');
+//     setTimeout(backToCopyHex, 5000);
+//     function backToCopyHex() {
+//         clipboardButton.text('Copy HEX');
+//     }
+// }
 
 
 // var $body = $('body');
@@ -19,8 +39,7 @@ $(document).ready(function() {
 clipboard = new ClipboardJS('.copy');
 
 // clipboard.on('success', function(e) {
-//     var buttonText = $(this).val().text();
-//     console.log(buttonText);
+//     buttonTextCopied();
 // });
 
 // Cache selectors

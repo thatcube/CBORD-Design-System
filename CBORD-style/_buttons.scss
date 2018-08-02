@@ -54,8 +54,11 @@
             @include outline-button($white, $dark, $dark);
         }
     }
-    &.rounded {
+    &.round {
         border-radius: 34px;
+    }
+    &.square {
+        border-radius: 0;
     }
 }
 
