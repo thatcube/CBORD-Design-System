@@ -1,19 +1,36 @@
+// Every CSS measurement unit is rem-based. 1rem = 16px by default. 
+// You can calculate rem's by multiplying the normal, px value by 1/16 or 0.0625. 
+// For example, 8px is 0.5rem.
+// The advantage of using rem's is that someone can change their font-size on their browser, and the entire website will respond to that change.
+
+//colors
 $gray: #757575;
 $gray-darker: mix($gray, black, 90%);
 $black: #000;
 $white: #fff;
 
 $primary: #005cb9;
+$complementary: #007bff;
 $secondary: #d63665;
+
+// feedback colors
 $success: #008728;
 $info: #4ca5ff;
 $warning: #f7ba45;
 $danger: #b80000;
 $dark: #333;
 
+$background: mix(mix($primary, $white, 5%), #eee, 50%);
+
+// border radii
 $border-radius-small: .375rem;
 $border-radius-base: .625rem;
 $border-radius-large: 1rem;
 
 
-$background: mix(mix($primary, $white, 5%), #eee, 50%);
+// breakpoints
+$bp-xl: 65.625rem; // 1050px
+$bp-lg: 56.25rem;  // 900px
+$bp-md: 48rem;     // 768px
+$bp-sm: 37.55rem;  // 600px
+$bp-xs: 25rem;     // 400px

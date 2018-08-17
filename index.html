@@ -10,7 +10,8 @@
 </head>
 <body class="grid">
 
-    <header class="header">
+<header>
+    <nav class="header">
         <button class="menu-toggle">
             <span></span>
             <span></span>
@@ -18,7 +19,7 @@
             <div class="sr-only">Toggle navigation menu</div>
         </button>
         <h1 class="title"><img class="image small" src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer <span class="title-text">Style</span> Guide</span></h1>
-    </header>
+    </nav>
 
     <nav class="sidebar">
         <ul class="menu">
@@ -56,11 +57,12 @@
             </li>
         </ul>
     </nav>
+</header>
     
     <div class="content">
     <h1  id="introduction" class="title__content"><img src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer <span class="title-text">Style</span> Guide</span></h1>
     <article>
-        <h1>Introduction</h1>
+        <h1 class="text -bar">Introduction</h1>
         <p>Having a strong, modern, and stylistic visual identity helps to solidify CBORD 
             as a leader in higher education, healthcare, senior living, and general business 
             industries. Keeping that identity consistent helps to visually reinforce CBORD’s 
@@ -80,7 +82,7 @@
             on the Support team or those responsible for marketing CBORD’s products.</p>
     </article>
     <article id="general">
-        <h1>General</h1>
+        <h1 class="text -bar">General</h1>
         <p>If your team is already using Bootstrap, or any other framework, it is acceptable to continue 
             using the framework. However, the default styles should be updated/modified to adhere to this guide. This guide is based heavily on modern, Material Design principles and guidelines. I encourage you to visit the <a href="https://material.io/design/" target="_blank">Material Design Website</a>.</p>
         <h2>User First</h2>
@@ -94,44 +96,46 @@
         </p>
     </article>
     <article class="colors" id="colors">
-        <h1>Colors</h1>
+        <h1 class="text -bar">Colors</h1>
+        <h2>Brand</h2>
         <div class="colors__list">
-
             <div class="color">
                 <div class="color__example primary">
-                    <button class="button outline dark square copy" data-clipboard-text="#005cb9">Copy HEX</button>
+                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#005cb9">Copy HEX</button>
                 </div>
                 <p class="dark-text">primary</p>
                 <p>#005cb9</p>
             </div>
 
+            <!-- <div class="color">
+                <div class="color__example complementary">
+                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#007bff">Copy HEX</button>              
+                </div>
+                <p class="dark-text">complementary</p>
+                <p>#007bff</p>
+            </div> -->
+
             <div class="color">
                 <div class="color__example secondary">
-                    <button class="button outline dark square copy" data-clipboard-text="#d63665">Copy HEX</button>
+                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#d63665">Copy HEX</button>
                 </div>
                 <p class="dark-text">secondary</p>
                 <p>#d63665</p>
             </div>
+        </div>
 
+        <h2>Feedback</h2>
+        <div class="colors__list">
             <div class="color">
                 <div class="color__example success">
-                    <button class="button outline dark square copy" data-clipboard-text="#008728">Copy HEX</button>
+                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#008728">Copy HEX</button>
                 </div>
                 <p class="dark-text">success</p>
                 <p>#008728</p>
             </div>
-
-            <div class="color">
-                <div class="color__example info">
-                    <button class="button outline dark square copy" data-clipboard-text="#4ca5ff">Copy HEX</button>              
-                </div>
-                <p class="dark-text">info</p>
-                <p>#4ca5ff</p>
-            </div>
-
             <div class="color">
                 <div class="color__example warning">
-                    <button class="button outline dark square copy" data-clipboard-text="#f7ba45">Copy HEX</button>
+                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#f7ba45">Copy HEX</button>
                 </div>
                 <p class="dark-text">warning</p>
                 <p>#f7ba45</p>
@@ -139,25 +143,41 @@
 
             <div class="color">
                 <div class="color__example danger">
-                    <button class="button outline dark square copy" data-clipboard-text="#b80000">Copy HEX</button>
+                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#b80000">Copy HEX</button>
                 </div>
                 <p class="dark-text">danger</p>
                 <p>#b80000</p>
             </div>
-            
+
+            <div class="color">
+                <div class="color__example info">
+                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#4ca5ff">Copy HEX</button>
+                </div>
+                <p class="dark-text">info</p>
+                <p>#4ca5ff</p>
+            </div>
+        </div>
+        <div class="colors__list">
             <div class="color">
                 <div class="color__example dark">
-                    <button class="button outline light square copy" data-clipboard-text="#333">Copy HEX</button>
+                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#333">Copy HEX</button>
                 </div>
                 <p class="dark-text">dark</p>
                 <p>#333</p>
             </div>
             <div class="color">
                 <div class="color__example light">
-                    <button class="button outline dark square copy" data-clipboard-text="#fff">Copy HEX</button>
+                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#fff">Copy HEX</button>
                 </div>
                 <p class="dark-text">white</p>
                 <p>#fff</p>
+            </div>
+            <div class="color">
+                <div class="color__example background">
+                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#f0f3f5">Copy HEX</button>
+                </div>
+                <p class="dark-text">background</p>
+                <p>#f0f3f5</p>
             </div>
         </div>
         <h2>Usage</h2>
@@ -186,11 +206,6 @@
                     <td>#008728<span class="success table-swatch"></span></td>
                 </tr>
                 <tr>
-                    <td><strong>$info</strong></td>
-                    <td>Information</td>
-                    <td>#4ca5ff<span class="info table-swatch"></span></td>
-                </tr>
-                <tr>
                     <td><strong>$warning</strong></td>
                     <td>Warning</td>
                     <td>#f7ba45<span class="warning table-swatch"></span></td>
@@ -202,6 +217,11 @@
                     <td>#b80000<span class="danger table-swatch"></span></td>
                 </tr>
                 <tr>
+                    <td><strong>$info</strong></td>
+                    <td>Information</td>
+                    <td>#4ca5ff<span class="info table-swatch"></span></td>
+                </tr>
+                <tr>
                     <td><strong>$dark</strong></td>
                     <td>Background<br> Text Color</td>
                     <td>#333<span class="dark table-swatch"></span></td>
@@ -211,14 +231,20 @@
                     <td>Supporting brand</td>
                     <td>#fff<span class="light table-swatch"></span></td>
                 </tr>
+                <tr>
+                    <td><strong>$background</strong></td>
+                    <td>Page background</td>
+                    <td>#f0f3f5<span class="background table-swatch"></span></td>
+                </tr>
             </tbody>
         </table>
     </article>
     <article id="accessibility">
-        <h1>Accessibility</h1>
+        <h1 class="text -bar">Accessibility</h1>
         <p>CBORD apps should be accessibile. Every application should follow 
             <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a> 
-            guidelines at a level AA conformance level.</p>
+            guidelines at least a level AA conformance level.</p>
+        <p>Use the official CBORD colors to ensure that level AA conformance is met. Text and images of text must have a contrast ratio of at least <b>4.5:1</b>. An exception is large text (at least 24px or 19px semi-bold) which must have a contrast ratio of <b>3:1</b>.</p>
         <p>To quickly and easily check accessibility for a web application, install the 
             <a href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc" 
             target="_blank">Siteimprove Accessibility Checker for Chrome</a>. Unfortunately, this tool is only available 
@@ -226,11 +252,10 @@
         <p>If you’re not a fan of that plugin, or don’t use chrome, you can view the very extensive 
             <a href="https://www.w3.org/WAI/ER/tools/" target="_blank">W3C Web Accessibility Evalutation Tools List</a>. 
             One tool that often receives high praise, and for good reason, is the <a href="https://wave.webaim.org/extension/" 
-            target="_blank">WAVE web accessibility evaluation tool</a>. The interface is a bit outdated, but it serves its 
-            purpose well and is recommended as an alternative to the Siteimprove Accessibility Checker.</p>
+            target="_blank">WAVE web accessibility evaluation tool</a>.</p>
     </article>
     <article id="typography">
-        <h1>Typography</h1>
+        <h1 class="text -bar">Typography</h1>
         <p>Roboto by Google is the official CBORD web font.
                 <b><i>It is recommended to self-host Roboto</b></i> if you are not already. By hosting Roboto, 
                 CBORD does not rely on Google to host the font and it can still be used offline. Hosting is easy to do using the <a href="http://google-webfonts-helper.herokuapp.com/fonts" target="_blank">Google Webfonts Helper Tool</a>.
@@ -259,41 +284,64 @@
             "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
     </article>
     <article id="components">
-        <h1>Components</h1>
+        <h1 class="text -bar">Components</h1>
         <section class="buttons" id="buttons">
             <h2>Buttons</h2>
+            <p>Buttons express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience. </p>
+            <p>There are different styles and sizes for buttons and it's important to use the correct button type to communicate its place in the hierarchy. </p>
             <h3>Standard Buttons</h3>
-            <p>Standard buttons have high emphasis because of their bold, solid fill, and are used for important actions.</p>
-            <button class="button primary">Primary</button>
-            <button class="button secondary">Secondary</button>
-            <button class="button success">Success</button>
-            <button class="button info">Info</button>
-            <button class="button warning">Warning</button>
-            <button class="button danger">Danger</button>
-            <button class="button dark">Dark</button>
-            <button class="button light">Light</button>
+            <p>Standard buttons are for <b>primary</b> actions. They have high emphasis and should be obvious.</p>
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--secondary">Secondary</button>
+            <button class="btn btn--success">Success</button>
+            <button class="btn btn--info">Info</button>
+            <button class="btn btn--warning">Warning</button>
+            <button class="btn btn--danger">Danger</button>
+            <button class="btn btn--dark">Dark</button>
+            <button class="btn btn--light">Light</button>
 
             <h3>Outlined Buttons</h3>
-            <p>Outlined buttons have lower emphasis and are used for less important actions.</p>
-            <button class="button outline primary">Primary</button>
-            <button class="button outline secondary">Secondary</button>
-            <button class="button outline success">Success</button>
-            <button class="button outline info">Info</button>
-            <button class="button outline warning">Warning</button>
-            <button class="button outline danger">Danger</button>
-            <button class="button outline dark">Dark</button>
-            <button class="button outline light">Light</button>
+            <p>Outlined buttons are for <b>secondary</b> actions. They have medium emphasis - they are clear but not prominent.</p>
+            <button class="btn btn--outline btn--primary">Primary</button>
+            <button class="btn btn--outline btn--secondary">Secondary</button>
+            <button class="btn btn--outline btn--success">Success</button>
+            <button class="btn btn--outline btn--info">Info</button>
+            <button class="btn btn--outline btn--warning">Warning</button>
+            <button class="btn btn--outline btn--danger">Danger</button>
+            <button class="btn btn--outline btn--dark">Dark</button>
+            <div class="dark">
+            <button class="btn btn--outline btn--light">Light</button>
+            </div>
 
-            <h3>Rounded Buttons</h3>
-            <p>Standard and outlined buttons can be rounded for extra style.</p>
-            <button class="button round primary">Primary</button>
-            <button class="button round outline secondary">Secondary</button>
-            <button class="button round success">Success</button>
-            <button class="button round outline info">Info</button>
-            <button class="button round warning">Warning</button>
-            <button class="button round outline danger">Danger</button>
-            <button class="button round dark">Dark</button>
-            <button class="button round outline light">Light</button>
+            <h3>Link Buttons</h3>
+            <p>Link buttons are for <b>tertiary</b> actions. They have low emphasis - they are discoverable but unobtrusive.</p>
+            <button class="btn btn--link btn--primary">Primary</button>
+            <button class="btn btn--link btn--secondary">Secondary</button>
+            <button class="btn btn--link btn--success">Success</button>
+            <button class="btn btn--link btn--info">Info</button>
+            <button class="btn btn--link btn--warning">Warning</button>
+            <button class="btn btn--link btn--danger">Danger</button>
+            <div class="light">
+            <button class="btn btn--link btn--dark">Dark</button>
+            </div>
+            <div class="dark">
+            <button class="btn btn--link btn--light">Light</button>
+            </div>
+
+            <h3>Rounded and Squared Buttons</h3>
+            <p>All buttons can be rounded or squared.</p>
+            <button class="btn btn--round btn--primary">Primary</button>
+            <button class="btn btn--round btn--outline btn--secondary">Secondary</button>
+            <button class="btn btn--square btn--success">Success</button>
+            <button class="btn btn--square btn--outline btn--info">Info</button>
+            <button class="btn btn--round btn--warning">Warning</button>
+            <button class="btn btn--round btn--outline btn--danger">Danger</button>
+            <div class="light">
+            <button class="btn btn--square btn--dark">Dark</button>
+            </div>
+            <div class="dark">
+            <button class="btn btn--square btn--light">Light</button>
+            </div>
             
         </section>
         <section id="cards">
@@ -309,7 +357,7 @@
                     <h4 class="card__subtitle">Subtitle</h4>
                     <p class="card__text">Twee adaptogen blue bottle helvetica edison bulb readymade palo santo 
                         wolf sartorial next level. Readymade blue bottle disrupt fixie cliche chartreuse post-ironic.</p>
-                    <button class="button secondary outline">Action</button>
+                    <button class="btn  btn--secondary btn--outline">Action</button>
                     </div>
                 </section>
             </div>
@@ -428,7 +476,7 @@
         </section>
     </article>
     <article id="css">
-        <h1>CSS</h1>
+        <h1 class="text -bar">CSS</h1>
         <h2>Sass</h2>
         <p><b>Sass</b> stands for <b>S</b>yntactically <b>a</b>wesome <b>s</b>tyle <b>s</b>heets.</p>
         <p><a href="https://sass-lang.com/" target="_blank">Sass</a> is the official CBORD CSS preprocessor and it is recommended that all developers integrate 
@@ -450,7 +498,7 @@
 
     </article>
     <article id="toneandvoice">
-        <h1>Tone and Voice</h1>
+        <h1 class="text -bar">Tone and Voice</h1>
         <p>Simply looking like a CBORD app is not enough—your application should sound like it too. 
             The tone and voice within an application are an important aspect of CBORD’s identity and should 
             be consistent across all products.</p>
@@ -504,7 +552,7 @@
         </p>
     </article>
     <article id="images">
-        <h1>Images, Icons, and Logos</h1>
+        <h1 class="text -bar">Images, Icons, and Logos</h1>
         <h2>Images</h2>
         <p><b>Use SVG images</b> whenever possible. Why?
             <ul>

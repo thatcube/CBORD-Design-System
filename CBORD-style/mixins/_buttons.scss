@@ -1,11 +1,11 @@
-@mixin standard-button($color, $background) {
-    color: $color;
+@mixin button-standard($text-color, $background) {
+    color: $text-color;
     background: $background;
     &:hover, &:focus{
         background: mix($background, $white, 90%);
     }
     &:hover {
-        box-shadow: 0 2px 10px 0 rgba(41, 41, 41, .3);
+        box-shadow: 0 0.125rem 0.625rem 0 rgba(41, 41, 41, .3);
         &:focus {
             box-shadow: none;
         }
@@ -16,19 +16,32 @@
     }
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 3px mix(rgba(0,0,0, 0.185), rgba($background, .35), 15%), 0 3px 15px rgba($background, 0.2), 0 2px 5px rgba(0,0,0, 0.1);
+        box-shadow: 0 0 0 0.1875rem mix(rgba(0,0,0, 0.185), rgba($background, .35), 15%), 0 0.1875rem 0.9375rem rgba($background, 0.2), 0 0.125rem 0.3125rem rgba(0,0,0, 0.1);
     }
 }
 
-@mixin outline-button($hover-text-color, $text-color, $background) {
-    background: $white;
-    border: 1px solid;
+@mixin button-outline($hover-text-color, $text-color, $background) {
+    background: transparent;
+    border: 0.0625rem solid;
     border-color: $background;
     color: $text-color;
     &:hover {
         background: $background;
         color: $hover-text-color;
-
         box-shadow: none;
+    }
+}
+
+@mixin button-link($text-color) {
+    color: $text-color;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    &:hover, &:focus {
+        text-decoration: underline;
+        color: mix($text-color, $white, 80%);
+    }
+    &:focus {
+        outline: 0.0625rem solid $text-color;
     }
 }

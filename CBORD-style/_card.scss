@@ -1,12 +1,16 @@
 .card {
     border-radius: $border-radius-large;
-    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.05), 0 0.9375rem 1.40625rem rgba(90,97,105,.05), 0 0.25rem 0.53125rem rgba(90,97,105,.06), 0 0.125rem 0.1875rem rgba(90,97,105,.05);
+    
     background: $white;
     margin-bottom: 2rem;
+    transition: .3s ease box-shadow;
+    &:hover {
+        box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
+    }
 
     //reset line-height to fix placement of images
     line-height: 0;
-    transition: transform 0.3s ease;
     &__img {
         border-radius: 0;
         //images can be placed at the top or bottom of a card

@@ -6,7 +6,7 @@ $(document).ready(function() {
         $(".menu, .menu-toggle, .sidebar, .header, body").toggleClass("open");
     });
 
-    var clipboardButton = $('.color .button');
+    var clipboardButton = $('.color .btn');
     clipboardButton.on("click", function() {
         $this = $(this);
         $this.text('HEX Copied!');
