@@ -1,9 +1,6 @@
 @import "CBORD-style/CBORD-style";
 @import "colors";
 
-
-$breakpoint: 62rem;
-
 * {
     box-sizing: border-box;
 }
@@ -201,6 +198,7 @@ $logo-text-color: #414042;
     }
     li.active a {
         color: $primary;
+        background: rgba($black, 0.05);
         span {
             color: $primary;
             transform: translateX(0.1875rem);

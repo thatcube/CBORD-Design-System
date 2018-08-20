@@ -3,9 +3,9 @@
     border: none;
     border-radius: $border-radius-base;
     transition: .3s ease box-shadow;
-    height: 2rem;
-    padding: 0 1rem;
-    font-size: 0.875rem;
+    height: 2em;
+    padding: 0 1em;
+    font-size: 1em;
     font-weight: 600;
     &--primary {
         @include button-standard($white, $primary);

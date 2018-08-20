@@ -5,7 +5,7 @@
         background: mix($background, $white, 90%);
     }
     &:hover {
-        box-shadow: 0 0.125rem 0.625rem 0 rgba(41, 41, 41, .3);
+        box-shadow: 0 0.125em 0.625em 0 rgba(41, 41, 41, .3);
         &:focus {
             box-shadow: none;
         }
@@ -16,13 +16,13 @@
     }
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 0.1875rem mix(rgba(0,0,0, 0.185), rgba($background, .35), 15%), 0 0.1875rem 0.9375rem rgba($background, 0.2), 0 0.125rem 0.3125rem rgba(0,0,0, 0.1);
+        box-shadow: 0 0 0 0.1875em mix(rgba(0,0,0, 0.185), rgba($background, .35), 15%), 0 0.1875em 0.9375em rgba($background, 0.2), 0 0.125em 0.3125em rgba(0,0,0, 0.1);
     }
 }
 
 @mixin button-outline($hover-text-color, $text-color, $background) {
     background: transparent;
-    border: 0.0625rem solid;
+    border: 0.0625em solid;
     border-color: $background;
     color: $text-color;
     &:hover {
@@ -42,6 +42,6 @@
         color: mix($text-color, $white, 80%);
     }
     &:focus {
-        outline: 0.0625rem solid $text-color;
+        outline: 0.0625em solid $text-color;
     }
 }
