@@ -1,12 +1,12 @@
 .card {
     border-radius: $border-radius-large;
-    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.05), 0 0.9375rem 1.40625rem rgba(90,97,105,.05), 0 0.25rem 0.53125rem rgba(90,97,105,.06), 0 0.125rem 0.1875rem rgba(90,97,105,.05);
+    box-shadow: 0 0.46875em 2.1875em rgba(90,97,105,.05), 0 0.9375em 1.40625em rgba(90,97,105,.05), 0 0.25em 0.53125em rgba(90,97,105,.06), 0 0.125em 0.1875em rgba(90,97,105,.05);
     
     background: $white;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     transition: .3s ease box-shadow;
     &:hover {
-        box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
+        box-shadow: 0 0.46875em 2.1875em rgba(90,97,105,.1), 0 0.9375em 1.40625em rgba(90,97,105,.1), 0 0.25em 0.53125em rgba(90,97,105,.12), 0 0.125em 0.1875em rgba(90,97,105,.1);
     }
 
     //reset line-height to fix placement of images
@@ -24,7 +24,7 @@
         }
     }
     &__body {
-        padding: 1.875rem;
+        padding: 1.875em;
     }
     &__text {
         line-height: 2;
@@ -33,6 +33,6 @@
         font-weight: normal;
     }
     &__header {
-        padding: 1rem 1.875rem;
+        padding: 1em 1.875em;
     }
 }

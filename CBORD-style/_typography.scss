@@ -1,9 +1,6 @@
-body {
+:root {
     font-family: "Source Sans Pro", -apple-system,BlinkMacSystemFont,"Segoe UI", "Helvetica Neue", Helvetica, Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 0.9375rem;
-    @include at-least(sm) {
-        font-size: calc( 0.875rem + 8 * ((100vw - 31.25rem) / 1500));
-    }
+    font-size: 1.1rem;
 }
 
 
