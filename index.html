@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CBORD Developer Style Guide</title>
     <link rel="stylesheet" href="style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body class="grid">
@@ -257,12 +257,12 @@
     </article>
     <article id="typography">
         <h1 class="text -bar">Typography</h1>
-        <p>Roboto by Google is the official CBORD web font.
-                <b><i>It is recommended to self-host Roboto</b></i> if you are not already. By hosting Roboto, 
+        <p>Nunito by Google is the official CBORD web font.
+                <b><i>It is recommended to self-host Nunito</b></i> if you are not already. By hosting Nunito, 
                 CBORD does not rely on Google to host the font and it can still be used offline. Hosting is easy to do using the <a href="http://google-webfonts-helper.herokuapp.com/fonts" target="_blank">Google Webfonts Helper Tool</a>.
-                Use the follow procedure to download and host Roboto:
+                Use the follow procedure to download and host Nunito:
                 <ol>
-                    <li>Search for ‘Roboto’ in the search box</li>
+                    <li>Search for 'Nunito' in the search box</li>
                     <li>Select the ‘latin’ charset</li>
                     <li>Select (check) every style</li>
                     <li>Make sure the ‘Best Support’ option is selected for browser support.</li>
@@ -271,16 +271,16 @@
                     <li>Copy and paste the CSS that was generated on the tool website into the CSS file you just created</li>
                     <li>Link the CSS file to your project</li>
                 </ol>
-                <p><b class="dark-text">Do</b> link every font style. Properly linking all the Roboto font styles ensures that it 
+                <p><b class="dark-text">Do</b> link every font style. Properly linking all the Nunito font styles ensures that it 
                     renders the same on every device or browser. You can test this by previewing a drastic font-weight on several different browsers.</p>
 
-                <p><b class="dark-text">Do not</b> only link one style of the Roboto font-face, such as ‘Roboto Regular.’ Even though modern 
+                <p><b class="dark-text">Do not</b> only link one style of the Nunito font-face, such as ‘Nunito Regular.’ Even though modern 
                     browsers can render higher font weights, italics, and styles, each browser does it differently.</p>
         <h2>Fallback Fonts</h2>
         <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
             system/browser cannot display it correctly. These are also great for performance.</p>
         <h3>Example font stack: </h3>
-        <pre><code class="code font">font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", 
+        <pre><code class="code font">font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", 
             Helvetica, Arial, sans-serif, "Apple Color Emoji", 
             "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
     </article>
