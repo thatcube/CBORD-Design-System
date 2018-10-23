@@ -16,6 +16,15 @@
             @include button-link($primary);
         }
     }
+    &--energeticblue {
+        @include button-standard($white, $energetic-blue);
+        &.btn--outline {
+            @include button-outline($white, $energetic-blue, $energetic-blue);
+        }
+        &.btn--link {
+            @include button-link($energetic-blue);
+        }
+    }
     &--success {
         @include button-standard($white, $success);
         &.btn--outline {

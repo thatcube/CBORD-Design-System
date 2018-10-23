@@ -9,16 +9,17 @@ $gray-darker: mix($gray, black, 90%);
 $black: #000;
 $white: #fff;
 
-$primary: #005cb9;
-$complementary: #007bff;
+$primary: #166dff;
+$energetic-blue: #166dff;
 $secondary: #d63665;
 
 // feedback colors
-$success: #008728;
+$success: #17cf73;
 $info: #4ca5ff;
 $warning: #f7ba45;
-$danger: #b80000;
+$danger: #e22942;
 $dark: #333;
+
 
 $background: mix(mix($primary, $white, 5%), #eee, 50%);
 

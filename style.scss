@@ -6,11 +6,11 @@
 }
 
 ::selection {
-  background: $complementary; /* WebKit/Blink Browsers */
+  background: $energetic-blue; /* WebKit/Blink Browsers */
   color: $white;
 }
 ::-moz-selection {
-  background: $complementary; /* Gecko Browsers */
+  background: $energetic-blue; /* Gecko Browsers */
   color: $white;
 }
 
@@ -124,7 +124,7 @@ $logo-text-color: #414042;
 
 .title-text {
     // this color is only used to match the logo - actual primary brand color is #005cb9
-    color: #0261a5;
+    color: $energetic-blue;
 }
 
 .primary-text {
