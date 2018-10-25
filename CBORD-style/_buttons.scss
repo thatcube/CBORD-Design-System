@@ -3,10 +3,10 @@
     border: none;
     border-radius: $border-radius-base;
     transition: .3s ease box-shadow;
-    height: 2em;
-    padding: 0 1em;
-    font-size: 1em;
-    font-weight: 600;
+    height: 3.6rem;
+    padding: 0 2.6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     &--primary {
         @include button-standard($white, $primary);
         &.btn--outline {
@@ -17,21 +17,21 @@
         }
     }
     &--energeticblue {
-        @include button-standard($white, $energetic-blue);
+        @include button-standard($white, $primary);
         &.btn--outline {
-            @include button-outline($white, $energetic-blue, $energetic-blue);
+            @include button-outline($white, $primary, $primary);
         }
         &.btn--link {
-            @include button-link($energetic-blue);
+            @include button-link($primary);
         }
     }
     &--success {
-        @include button-standard($white, $success);
+        @include button-standard($serene-green-contrast, $success);
         &.btn--outline {
-            @include button-outline($white, $success, $success);
+            @include button-outline($serene-green-contrast, mix($success, $serene-green-contrast, 35%), $success);
         }
         &.btn--link {
-            @include button-link($success);
+            @include button-link(mix($success, $serene-green-contrast, 35%));
         }
     }
     &--secondary {

@@ -10,11 +10,24 @@ $black: #000;
 $white: #fff;
 
 $primary: #166dff;
-$energetic-blue: #166dff;
+
+//tints
+$primary-lighten-1: #007fff;
+$primary-lighten-2: #00a0ff;
+$primary-lighten-3: #88c8ff;
+$primary-lighten-4: #b9ddff;
+
+//shades
+$primary-darken-1: #0056e6;
+$primary-darken-2: #0043b3;
+$primary-darken-3: #003080;
+$primary-darken-4: #001d4d;
+
 $secondary: #d63665;
 
 // feedback colors
-$success: #17cf73;
+$success: #22d0a5;
+$serene-green-contrast: #494949;
 $info: #4ca5ff;
 $warning: #f7ba45;
 $danger: #e22942;
@@ -24,9 +37,9 @@ $dark: #333;
 $background: mix(mix($primary, $white, 5%), #eee, 50%);
 
 // border radii
-$border-radius-small: .375rem;
-$border-radius-base: .625rem;
-$border-radius-large: 1rem;
+$border-radius-small: .6rem;
+$border-radius-base: 1rem;
+$border-radius-large: 1.6rem;
 
 
 // breakpoints
