@@ -5,8 +5,7 @@
     margin-left: 0;
     max-width: 80rem;
 
-    &.-shades,
-    &.-tints {
+    &.-spectrum {
         .color__example {
             height: 6rem;
 
@@ -127,18 +126,47 @@
 .dark {
     background: $dark;
 }
+.-black {
+    background: $black;
+}
+.-white {
+    background: $white;
+    border: 0.1rem solid #dfe3e6;
+}
 
 .light {
     background: $white;
-    border: 0.0625rem solid #dfe3e6;
+    border: 0.1rem solid #dfe3e6;
 }
 
 .background {
     background: $background;
-    border: 0.0625rem solid #dfe3e6;
+    border: 0.1rem solid #dfe3e6;
 }
-
-
+.-gray-1 {
+    background: $gray-1;
+}
+.-gray-2 {
+    background: $gray-2;
+}
+.-gray-3 {
+    background: $gray-3;
+}
+.-gray-4 {
+    background: $gray-4;
+}
+.-gray-5 {
+    background: $gray-5;
+}
+.-gray-6 {
+    background: $gray-6;
+}
+.-gray-7 {
+    background: $gray-7;
+}
+.-gray-8 {
+    background: $gray-8;
+}
 .colors table {
     width: 100%;
     border-collapse: collapse;
