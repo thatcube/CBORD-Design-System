@@ -26,12 +26,12 @@
         }
     }
     &--success {
-        @include button-standard($serene-green-contrast, $success);
+        @include button-standard($serene-green-contrast, $serene-green);
         &.btn--outline {
-            @include button-outline($serene-green-contrast, mix($success, $serene-green-contrast, 35%), $success);
+            @include button-outline($serene-green-contrast, mix($serene-green, $serene-green-contrast, 35%), $serene-green);
         }
         &.btn--link {
-            @include button-link(mix($success, $serene-green-contrast, 35%));
+            @include button-link(mix($serene-green, $serene-green-contrast, 35%));
         }
     }
     &--secondary {
@@ -53,21 +53,21 @@
         }
     }
     &--warning {
-        @include button-standard(#2c2c2c, $warning);
+        @include button-standard(#2c2c2c, $mcyellow);
         &.btn--outline {
-            @include button-outline(#2c2c2c, #a26b00, $warning);
+            @include button-outline(#2c2c2c, #a26b00, $mcyellow);
         }
         &.btn--link {
             @include button-link(#a26b00);
         }
     }
     &--danger {
-        @include button-standard(#f0f0f0, $danger);
+        @include button-standard(#f0f0f0, $passion-red);
         &.btn--outline {
-            @include button-outline(#f0f0f0, $danger, $danger);
+            @include button-outline(#f0f0f0, $passion-red, $passion-red);
         }
         &.btn--link {
-            @include button-link($danger);
+            @include button-link($passion-red);
         }
     }
     &--light {
@@ -118,5 +118,6 @@
         display: inline-block;
         margin: 0.5rem;
         border: none;
+        border-radius: $border-radius-small;
     }
 }

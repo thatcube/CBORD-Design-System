@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 17.6rem;
+    width: 19.2rem;
     height: 12rem;
 
     @include until(md) {
@@ -108,7 +108,7 @@
 }
 
 .success {
-    background: $success;
+    background: $serene-green;
 }
 
 .info {
@@ -116,11 +116,11 @@
 }
 
 .warning {
-    background: $warning;
+    background: $mcyellow;
 }
 
 .danger {
-    background: $danger;
+    background: $passion-red;
 }
 
 .dark {

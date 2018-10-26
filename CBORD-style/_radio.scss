@@ -15,29 +15,30 @@ input[type="radio"] {
             content: '';
             background: white;
             border-radius: 100%;
-            border: 0.0625rem solid darken(white, 25%);
+            border: 0.2rem solid darken(white, 25%);
             display: inline-block;
-            width: 1em;
-            height: 1em;
+            width: 1.6rem;
+            height: 1.6rem;
             position: relative;
-            margin-right: 0.3em;
+            margin-right: 0.3rem;
             vertical-align: top;
             cursor: pointer;
             text-align: center;
-            transition: all 250ms cubic-bezier(.27, .01, .38, 1.06);
+            transition: all 0.25s cubic-bezier(.27, .01, .38, 1.06);
         }
     }
     &:checked {
         +label {
             &:before {
                 background-color: $primary;
-                box-shadow: inset 0 0 0 0.25rem white;
+                box-shadow: inset 0 0 0 0.4rem white;
+                border-color: $primary;
             }
         }
         &:focus {
             +label {
                 &:before {
-                    box-shadow: inset 0 0 0 0.25rem white, 0 0 0.5rem rgba(102, 175, 233, 0.6);
+                    box-shadow: inset 0 0 0 0.4rem white, 0 0 0.8rem rgba(102, 175, 233, 0.6);
                 }
             }
         }
@@ -47,7 +48,7 @@ input[type="radio"] {
             &:before {
                 outline: none;
                 border-color: $primary;
-                box-shadow: 0 0 0.5rem rgba(102, 175, 233, 0.6);
+                box-shadow: 0 0 0.8rem rgba(102, 175, 233, 0.6);
             }
         }
     }

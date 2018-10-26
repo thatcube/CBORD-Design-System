@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,351 +10,359 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body class="grid">
 
-<header>
-    <nav class="header">
-        <button class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="sr-only">Toggle navigation menu</div>
-        </button>
-        <h1 class="title"><img class="image small" src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer <span class="title-text">Style</span> Guide</span></h1>
-    </nav>
+    <header>
+        <nav class="header">
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="sr-only">Toggle navigation menu</div>
+            </button>
+            <h1 class="title"><img class="image small" src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer
+                    <span class="title-text">Style</span> Guide</span></h1>
+        </nav>
 
-    <nav class="sidebar">
-        <ul class="menu">
-            <li class="active">
-                <a href="#introduction"><span>Introduction</span></a>
-            </li>
-            <li>
-                <a href="#general"><span>General</span></a>
-            </li>
-            <li>
-                <a href="#colors"><span>Colors</span></a>
-            </li>
-            <li>
-                <a href="#accessibility"><span>Accessibility</span></a>
-            </li>
-            <li>
-                <a href="#typography"><span>Typography</span></a>
-            </li>
-            <li>
-                <a href="#components"><span>Components</span></a>
-                <ul class="submenu">
-                    <li><a href="#buttons"><span>Buttons</span></a></li>
-                    <li><a href="#cards"><span>Cards</span></a></li>
-                    <li><a href="#controls"><span>Controls</span></a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#css"><span>CSS</span></a>
-            </li>
-            <li>
-                <a href="#toneandvoice"><span>Tone and Voice</span></a>
-            </li>
-            <li>
-                <a href="#images"><span>Images, Icons, and Logos</span></a>
-            </li>
-        </ul>
-    </nav>
-</header>
-    
+        <nav class="sidebar">
+            <ul class="menu">
+                <li class="active">
+                    <a href="#introduction"><span>Introduction</span></a>
+                </li>
+                <li>
+                    <a href="#general"><span>General</span></a>
+                </li>
+                <li>
+                    <a href="#colors"><span>Colors</span></a>
+                </li>
+                <li>
+                    <a href="#accessibility"><span>Accessibility</span></a>
+                </li>
+                <li>
+                    <a href="#typography"><span>Typography</span></a>
+                </li>
+                <li>
+                    <a href="#components"><span>Components</span></a>
+                    <ul class="submenu">
+                        <li><a href="#buttons"><span>Buttons</span></a></li>
+                        <li><a href="#cards"><span>Cards</span></a></li>
+                        <li><a href="#controls"><span>Controls</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#css"><span>CSS</span></a>
+                </li>
+                <li>
+                    <a href="#toneandvoice"><span>Tone and Voice</span></a>
+                </li>
+                <li>
+                    <a href="#images"><span>Images, Icons, and Logos</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="content">
-    <h1  id="introduction" class="title__content"><img src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer <span class="title-text">Style</span> Guide</span></h1>
-    <article>
-        <h1 class="text -bar">Introduction</h1>
-        <p>Having a strong, modern, and stylistic visual identity helps to solidify CBORD 
-            as a leader in higher education, healthcare, senior living, and general business 
-            industries. Keeping that identity consistent helps to visually reinforce CBORD’s 
-            reputation for quality and innovation. This guide is intended to help all developers 
-            adhere to CBORD’s visual identity and design goals.</p>
-        <p>Creating a style guide is especially important to CBORD because of the number of products 
-            that we offer. Having multiple different software solutions, development teams, and industries 
-            creates unwanted separation. This guide aims to stylistically unify every application—especially 
-            as the number of users is multiplied. Brand awareness should happen at the application level—not 
-            just the marketing level.</p>
-        <h2>Intended Audience</h2>
-        <p>This is a style guide intended for CBORD developers. No matter your position in Development, 
-            understanding the overall look and feel across multiple product lines is important to ensure 
-            CBORD’s visual identity is consistent. A basic understanding of web interfaces and experience 
-            working with frontend frameworks (such as Bootstrap) is expected for anyone reading this guide.</p>
-        <p>This guide may also be helpful to anyone else who works with CBORD’s software, such as a person 
-            on the Support team or those responsible for marketing CBORD’s products.</p>
-    </article>
-    <article id="general">
-        <h1 class="text -bar">General</h1>
-        <p>If your team is already using Bootstrap, or any other framework, it is acceptable to continue 
-            using the framework. However, the default styles should be updated/modified to adhere to this guide. This guide is based heavily on modern, Material Design principles and guidelines. I encourage you to visit the <a href="https://material.io/design/" target="_blank">Material Design Website</a>.</p>
-        <h2>User First</h2>
-        <p>
-            CBORD has a user-first mentality. When making any design decisions, consider the intended user 
-            and how they might perceive the changes.
-        </p>
-        <p>
-            Design choices should be made to enhance the user experience—be sure to evaluate the consequences 
-            of a decision before it causes unintended issues.
-        </p>
-    </article>
-    <article class="colors" id="colors">
-        <h1 class="text -bar">Colors</h1>
-        <h2>Brand</h2>
-        <div class="colors__list">
-            <div class="color">
-                <div class="color__example primary">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#166dff">Copy HEX</button>
+        <h1 id="introduction" class="title__content"><img src="/images/cbord_logo.svg" alt="CBORD logo"><span>Developer
+                <span class="title-text">Style</span> Guide</span></h1>
+        <article>
+            <h1 class="text -bar">Introduction</h1>
+            <p>Having a strong, modern, and stylistic visual identity helps to solidify CBORD
+                as a leader in higher education, healthcare, senior living, and general business
+                industries. Keeping that identity consistent helps to visually reinforce CBORD’s
+                reputation for quality and innovation. This guide is intended to help all developers
+                adhere to CBORD’s visual identity and design goals.</p>
+            <p>Creating a style guide is especially important to CBORD because of the number of products
+                that we offer. Having multiple different software solutions, development teams, and industries
+                creates unwanted separation. This guide aims to stylistically unify every application—especially
+                as the number of users is multiplied. Brand awareness should happen at the application level—not
+                just the marketing level.</p>
+            <h2>Intended Audience</h2>
+            <p>This is a style guide intended for CBORD developers. No matter your position in Development,
+                understanding the overall look and feel across multiple product lines is important to ensure
+                CBORD’s visual identity is consistent. A basic understanding of web interfaces and experience
+                working with frontend frameworks (such as Bootstrap) is expected for anyone reading this guide.</p>
+            <p>This guide may also be helpful to anyone else who works with CBORD’s software, such as a person
+                on the Support team or those responsible for marketing CBORD’s products.</p>
+        </article>
+        <article id="general">
+            <h1 class="text -bar">General</h1>
+            <p>If your team is already using Bootstrap, or any other framework, it is acceptable to continue
+                using the framework. However, the default styles should be updated/modified to adhere to this guide.
+                This guide is based heavily on modern, Material Design principles and guidelines. I encourage you to
+                visit the <a href="https://material.io/design/" target="_blank">Material Design Website</a>.</p>
+            <h2>User First</h2>
+            <p>
+                CBORD has a user-first mentality. When making any design decisions, consider the intended user
+                and how they might perceive the changes.
+            </p>
+            <p>
+                Design choices should be made to enhance the user experience—be sure to evaluate the consequences
+                of a decision before it causes unintended issues.
+            </p>
+        </article>
+        <article class="colors" id="colors">
+            <h1 class="text -bar">Colors</h1>
+            <h2>Brand</h2>
+            <div class="colors__list">
+                <div class="color">
+                    <div class="color__example primary">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#166dff">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Primary</p>
+                    <p>#166dff</p>
                 </div>
-                <p class="dark-text">Primary</p>
-                <p>#166dff</p>
-            </div>            
-        </div>
+            </div>
 
-        <h3>Tints</h3>
-        <div class="colors__list -spectrum">
-            <div class="color">
-                <div class="color__example primary -lighten-1">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#007fff">Copy HEX</button>
+            <h3>Tints</h3>
+            <div class="colors__list -spectrum">
+                <div class="color">
+                    <div class="color__example primary -lighten-1">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#007fff">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Lighten 1</p>
+                    <p>#007fff</p>
                 </div>
-                <p class="dark-text">Lighten 1</p>
-                <p>#007fff</p>
-            </div>
-            <div class="color">
-                <div class="color__example primary -lighten-2">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#00a0ff">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example primary -lighten-2">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#00a0ff">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Lighten 2</p>
+                    <p>#00a0ff</p>
                 </div>
-                <p class="dark-text">Lighten 2</p>
-                <p>#00a0ff</p>
-            </div>
-            <div class="color">
-                <div class="color__example primary -lighten-3">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#88c8ff">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example primary -lighten-3">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#88c8ff">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Lighten 3</p>
+                    <p>#88c8ff</p>
                 </div>
-                <p class="dark-text">Lighten 3</p>
-                <p>#88c8ff</p>
-            </div>
-            <div class="color">
-                <div class="color__example primary -lighten-4">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#b9ddff">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example primary -lighten-4">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#b9ddff">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Lighten 4</p>
+                    <p>#b9ddff</p>
                 </div>
-                <p class="dark-text">Lighten 4</p>
-                <p>#b9ddff</p>
             </div>
-        </div>
 
-        <h3>Shades</h3>
-        <div class="colors__list -spectrum">
-            <div class="color">
-                <div class="color__example primary -darken-1">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#0056e6">Copy HEX</button>
+            <h3>Shades</h3>
+            <div class="colors__list -spectrum">
+                <div class="color">
+                    <div class="color__example primary -darken-1">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#0056e6">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Darken 1</p>
+                    <p>#0056e6</p>
                 </div>
-                <p class="dark-text">Darken 1</p>
-                <p>#0056e6</p>
-            </div>
-            <div class="color">
-                <div class="color__example primary -darken-2">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#0043b3">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example primary -darken-2">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#0043b3">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Darken 2</p>
+                    <p>#0043b3</p>
                 </div>
-                <p class="dark-text">Darken 2</p>
-                <p>#0043b3</p>
-            </div>
-            <div class="color">
-                <div class="color__example primary -darken-3">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#003080">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example primary -darken-3">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#003080">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Darken 3</p>
+                    <p>#003080</p>
                 </div>
-                <p class="dark-text">Darken 3</p>
-                <p>#003080</p>
-            </div>
-            <div class="color">
-                <div class="color__example primary -darken-4">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#001d4d">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example primary -darken-4">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#001d4d">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Darken 4</p>
+                    <p>#001d4d</p>
                 </div>
-                <p class="dark-text">Darken 4</p>
-                <p>#001d4d</p>
             </div>
-        </div>
 
-        <h2>Feedback</h2>
-        <div class="colors__list">
-            <div class="color">
-                <div class="color__example success">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#22d0a5">Copy HEX</button>
+            <h2>Feedback</h2>
+            <div class="colors__list">
+                <div class="color">
+                    <div class="color__example success">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#22d0a5">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Serene Green</p>
+                    <p>#22d0a5</p>
                 </div>
-                <p class="dark-text">Serene Green</p>
-                <p>#22d0a5</p>
-            </div>
-            <div class="color">
-                <div class="color__example danger">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#e22942">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example danger">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#e22942">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Passion Red</p>
+                    <p>#e22942</p>
                 </div>
-                <p class="dark-text">Passion Red</p>
-                <p>#e22942</p>
-            </div>
-            <div class="color">
-                <div class="color__example warning">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#f7ba45">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example warning">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#f7ba45">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">McYellow</p>
+                    <p>#f7ba45</p>
                 </div>
-                <p class="dark-text">McYellow</p>
-                <p>#f7ba45</p>
             </div>
-        </div>
 
-        <h2>Monochrome Colors</h2>
-        <h3>Black & White</h3>
-        <div class="colors__list -spectrum">
-            <div class="color">
-                <div class="color__example -black">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#000">Copy HEX</button>
+            <h2>Monochrome Colors</h2>
+            <h3>Black & White</h3>
+            <div class="colors__list -spectrum">
+                <div class="color">
+                    <div class="color__example -black">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#000">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Black</p>
+                    <p>#000</p>
                 </div>
-                <p class="dark-text">Black</p>
-                <p>#000</p>
-            </div>
-            <div class="color">
-                <div class="color__example -white">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#fff">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -white">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#fff">Copy HEX</button>
+                    </div>
+                    <p class="dark-text">White</p>
+                    <p>#fff</p>
                 </div>
-                <p class="dark-text">White</p>
-                <p>#fff</p>
             </div>
-        </div>
-        <h3>Grays</h3>
-        <div class="colors__list -spectrum">
-            <div class="color">
-                <div class="color__example -gray-1">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#D8D8D8">Copy HEX</button>
+            <h3>Grays</h3>
+            <div class="colors__list -spectrum">
+                <div class="color">
+                    <div class="color__example -gray-1">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#D8D8D8">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 1</p>
+                    <p>#D8D8D8</p>
                 </div>
-                <p class="dark-text">Gray 1</p>
-                <p>#D8D8D8</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-2">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#C4C4C4">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-2">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#C4C4C4">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 2</p>
+                    <p>#C4C4C4</p>
                 </div>
-                <p class="dark-text">Gray 2</p>
-                <p>#C4C4C4</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-3">
-                    <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#979797">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-3">
+                        <button class="btn btn--outline btn--dark btn--square copy" data-clipboard-text="#979797">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 3</p>
+                    <p>#979797</p>
                 </div>
-                <p class="dark-text">Gray 3</p>
-                <p>#979797</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-4">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#6E6E6E">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-4">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#6E6E6E">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 4</p>
+                    <p>#6E6E6E</p>
                 </div>
-                <p class="dark-text">Gray 4</p>
-                <p>#6E6E6E</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-5">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#626262">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-5">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#626262">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 5</p>
+                    <p>#626262</p>
                 </div>
-                <p class="dark-text">Gray 5</p>
-                <p>#626262</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-6">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#515151">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-6">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#515151">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 6</p>
+                    <p>#515151</p>
                 </div>
-                <p class="dark-text">Gray 6</p>
-                <p>#515151</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-7">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#464646">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-7">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#464646">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 7</p>
+                    <p>#464646</p>
                 </div>
-                <p class="dark-text">Gray 7</p>
-                <p>#464646</p>
-            </div>
-            <div class="color">
-                <div class="color__example -gray-8">
-                    <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#333333">Copy HEX</button>
+                <div class="color">
+                    <div class="color__example -gray-8">
+                        <button class="btn btn--outline btn--light btn--square copy" data-clipboard-text="#333333">Copy
+                            HEX</button>
+                    </div>
+                    <p class="dark-text">Gray 8</p>
+                    <p>#333333</p>
                 </div>
-                <p class="dark-text">Gray 8</p>
-                <p>#333333</p>
             </div>
-        </div>
-        <h2>Usage</h2>
-        <table>
-            <thead>
-                <tr>
-                <th>Variable</th>
-                <th>Role(s)</th>
-                <th>Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>$primary</strong></td>
-                    <td>Primary brand</td>
-                    <td>#005cb9<span class="primary table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$secondary</strong></td>
-                    <td>Actions<br> Supporting brand</td>
-                    <td>#d63665<span class="secondary table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$success</strong></td>
-                    <td>Success<br> Confirm</td>
-                    <td>#008728<span class="success table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$warning</strong></td>
-                    <td>Warning</td>
-                    <td>#f7ba45<span class="warning table-swatch"></span></td>
-                </tr>
+            <h2>Usage</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Role(s)</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>$primary</strong></td>
+                        <td>Primary brand</td>
+                        <td>#166dff<span class="primary table-swatch"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>$serene-green</strong></td>
+                        <td>Success<br> Confirm</td>
+                        <td>#22d0a5<span class="success table-swatch"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>$passion-red</strong></td>
+                        <td>Error<br> Remove</td>
+                        <td>#e22942<span class="danger table-swatch"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>$mcyellow</strong></td>
+                        <td>Warning</td>
+                        <td>#f7ba45<span class="warning table-swatch"></span></td>
+                    </tr>
 
-                <tr>
-                    <td><strong>$danger</strong></td>
-                    <td>Error<br> Remove</td>
-                    <td>#b80000<span class="danger table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$info</strong></td>
-                    <td>Information</td>
-                    <td>#4ca5ff<span class="info table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$dark</strong></td>
-                    <td>Background<br> Text Color</td>
-                    <td>#333<span class="dark table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$white</strong></td>
-                    <td>Supporting brand</td>
-                    <td>#fff<span class="light table-swatch"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>$background</strong></td>
-                    <td>Page background</td>
-                    <td>#f0f3f5<span class="background table-swatch"></span></td>
-                </tr>
-            </tbody>
-        </table>
-    </article>
-    <article id="accessibility">
-        <h1 class="text -bar">Accessibility</h1>
-        <p>CBORD apps should be accessibile. Every application should follow 
-            <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a> 
-            guidelines at least a level AA conformance level.</p>
-        <p>Use the official CBORD colors to ensure that level AA conformance is met. Text and images of text must have a contrast ratio of at least <b>4.5:1</b>. An exception is large text (at least 24px or 19px semi-bold) which must have a contrast ratio of <b>3:1</b>.</p>
-        <p>To quickly and easily check accessibility for a web application, install the 
-            <a href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc" 
-            target="_blank">Siteimprove Accessibility Checker for Chrome</a>. Unfortunately, this tool is only available 
-            for Google Chrome at the time of writing this.</p>
-        <p>If you’re not a fan of that plugin, or don’t use chrome, you can view the very extensive 
-            <a href="https://www.w3.org/WAI/ER/tools/" target="_blank">W3C Web Accessibility Evalutation Tools List</a>. 
-            One tool that often receives high praise, and for good reason, is the <a href="https://wave.webaim.org/extension/" 
-            target="_blank">WAVE web accessibility evaluation tool</a>.</p>
-    </article>
-    <article id="typography">
-        <h1 class="text -bar">Typography</h1>
-        <p>Nunito by Google is the official CBORD web font.
-                <b><i>It is recommended to self-host Nunito</b></i> if you are not already. By hosting Nunito, 
-                CBORD does not rely on Google to host the font and it can still be used offline. Hosting is easy to do using the <a href="http://google-webfonts-helper.herokuapp.com/fonts" target="_blank">Google Webfonts Helper Tool</a>.
+
+                </tbody>
+            </table>
+        </article>
+        <article id="accessibility">
+            <h1 class="text -bar">Accessibility</h1>
+            <p>CBORD apps should be accessibile. Every application should follow
+                <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG 2.1</a>
+                guidelines at least a level AA conformance level.</p>
+            <p>Use the official CBORD colors to ensure that level AA conformance is met. Text and images of text must
+                have a contrast ratio of at least <b class="dark-text">4.5:1</b>. An exception is large text (at least 24px or 19px
+                semi-bold) which must have a contrast ratio of <b class="dark-text">3:1</b>.</p>
+            <p>To quickly and easily check accessibility for a web application, install the
+                <a href="https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc"
+                    target="_blank">Siteimprove Accessibility Checker for Chrome</a>. Unfortunately, this tool is only
+                available
+                for Google Chrome at the time of writing this.</p>
+            <p>If you’re not a fan of that plugin, or don’t use chrome, you can view the very extensive
+                <a href="https://www.w3.org/WAI/ER/tools/" target="_blank">W3C Web Accessibility Evalutation Tools List</a>.
+                One tool that often receives high praise, and for good reason, is the <a href="https://wave.webaim.org/extension/"
+                    target="_blank">WAVE web accessibility evaluation tool</a>.</p>
+            <p>Read more about CBORD's stance on accessibility <a href="https://www.cbord.com/about-2/accessibility/" target="_blank">here.</a></p>
+        </article>
+        <article id="typography">
+            <h1 class="text -bar">Typography</h1>
+            <p><b class="dark-text">Nunito</b> by Google is the official CBORD web font.
+                <b><i>It is recommended to self-host Nunito</b></i> if you are not already. By hosting Nunito,
+                CBORD does not rely on Google to host the font and it can still be used offline. Hosting is easy to do
+                using the <a href="http://google-webfonts-helper.herokuapp.com/fonts" target="_blank">Google Webfonts
+                    Helper Tool</a>.
                 Use the follow procedure to download and host Nunito:
                 <ol>
                     <li>Search for 'Nunito' in the search box</li>
@@ -362,337 +371,374 @@
                     <li>Make sure the ‘Best Support’ option is selected for browser support.</li>
                     <li>Download the files and unzip them</li>
                     <li>Create a CSS file within the unzipped folder</li>
-                    <li>Copy and paste the CSS that was generated on the tool website into the CSS file you just created</li>
+                    <li>Copy and paste the CSS that was generated on the tool website into the CSS file you just
+                        created</li>
                     <li>Link the CSS file to your project</li>
                 </ol>
-                <p><b class="dark-text">Do</b> link every font style. Properly linking all the Nunito font styles ensures that it 
-                    renders the same on every device or browser. You can test this by previewing a drastic font-weight on several different browsers.</p>
+                <p><b class="dark-text">Do</b> link every font style. Properly linking all the Nunito font styles
+                    ensures that it
+                    renders the same on every device or browser. You can test this by previewing a drastic font-weight
+                    on several different browsers.</p>
 
-                <p><b class="dark-text">Do not</b> only link one style of the Nunito font-face, such as ‘Nunito Regular.’ Even though modern 
+                <p><b class="dark-text">Do not</b> only link one style of the Nunito font-face, such as ‘Nunito
+                    Regular.’ Even though modern
                     browsers can render higher font weights, italics, and styles, each browser does it differently.</p>
-        <h2>Fallback Fonts</h2>
-        <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or the operating 
-            system/browser cannot display it correctly. These are also great for performance.</p>
-        <h3>Example font stack: </h3>
-        <pre><code class="code font">font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", 
+                <h2>Fallback Fonts</h2>
+                <p>Use system fonts to fallback on if the font you want to use does not load, is linked incorrectly, or
+                    the operating
+                    system/browser cannot display it correctly. These are also great for performance.</p>
+                <h3>Example font stack: </h3>
+                <pre><code class="code font">font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", 
             Helvetica, Arial, sans-serif, "Apple Color Emoji", 
             "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
-    </article>
-    <article id="components">
-        <h1 class="text -bar">Components</h1>
-        <section class="buttons" id="buttons">
-            <h2>Buttons</h2>
-            <p>Buttons express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience. </p>
-            <p>There are different styles and sizes for buttons and it's important to use the correct button type to communicate its place in the hierarchy. </p>
-            <h3>Standard Buttons</h3>
-            <p>Standard buttons are for <b>primary</b> actions. They have high emphasis and should be obvious.</p>
-            <button class="btn btn--primary">Primary</button>
-            <button class="btn btn--secondary">Secondary</button>
-            <button class="btn btn--success">Success</button>
-            <button class="btn btn--info">Info</button>
-            <button class="btn btn--warning">Warning</button>
-            <button class="btn btn--danger">Danger</button>
-            <button class="btn btn--dark">Dark</button>
-            <button class="btn btn--light">Light</button>
+        </article>
+        <article id="components">
+            <h1 class="text -bar">Components</h1>
+            <section class="buttons" id="buttons">
+                <h2>Buttons</h2>
+                <p>Buttons express what action will occur when the user clicks or touches it. Buttons are used to
+                    initialize an action, either in the background or foreground of an experience. </p>
+                <p>There are different styles and sizes for buttons and it's important to use the correct button type
+                    to communicate its place in the hierarchy. </p>
+                <h3>Standard Buttons</h3>
+                <p>Standard buttons are for <b class="dark-text">primary</b> actions. They have high emphasis and should be obvious.</p>
+                <button class="btn btn--primary">Primary</button>
+                <button class="btn btn--success">Success</button>
+                <button class="btn btn--info">Info</button>
+                <button class="btn btn--warning">Warning</button>
+                <button class="btn btn--danger">Danger</button>
+                <button class="btn btn--dark">Dark</button>
+                <button class="btn btn--light">Light</button>
 
-            <h3>Outlined Buttons</h3>
-            <p>Outlined buttons are for <b>secondary</b> actions. They have medium emphasis - they are clear but not prominent.</p>
-            <button class="btn btn--outline btn--primary">Primary</button>
-            <button class="btn btn--outline btn--secondary">Secondary</button>
-            <button class="btn btn--outline btn--success">Success</button>
-            <button class="btn btn--outline btn--info">Info</button>
-            <button class="btn btn--outline btn--warning">Warning</button>
-            <button class="btn btn--outline btn--danger">Danger</button>
-            <button class="btn btn--outline btn--dark">Dark</button>
-            <div class="dark">
-            <button class="btn btn--outline btn--light">Light</button>
-            </div>
+                <h3>Outline Buttons</h3>
+                <p>Outline buttons are for <b class="dark-text">secondary</b> actions. They have medium emphasis - they are clear but not
+                    prominent.</p>
+                <button class="btn btn--outline btn--primary">Primary</button>
+                <button class="btn btn--outline btn--success">Success</button>
+                <button class="btn btn--outline btn--info">Info</button>
+                <button class="btn btn--outline btn--warning">Warning</button>
+                <button class="btn btn--outline btn--danger">Danger</button>
+                <button class="btn btn--outline btn--dark">Dark</button>
+                <div class="dark">
+                    <button class="btn btn--outline btn--light">Light</button>
+                </div>
 
-            <h3>Link Buttons</h3>
-            <p>Link buttons are for <b>tertiary</b> actions. They have low emphasis - they are discoverable but unobtrusive.</p>
-            <button class="btn btn--link btn--primary">Primary</button>
-            <button class="btn btn--link btn--secondary">Secondary</button>
-            <button class="btn btn--link btn--success">Success</button>
-            <button class="btn btn--link btn--info">Info</button>
-            <button class="btn btn--link btn--warning">Warning</button>
-            <button class="btn btn--link btn--danger">Danger</button>
-            <div class="light">
-            <button class="btn btn--link btn--dark">Dark</button>
-            </div>
-            <div class="dark">
-            <button class="btn btn--link btn--light">Light</button>
-            </div>
+                <h3>Link Buttons</h3>
+                <p>Link buttons are for <b class="dark-text">tertiary</b> actions. They have low emphasis - they are discoverable but
+                    unobtrusive.</p>
+                <button class="btn btn--link btn--primary">Primary</button>
+                <button class="btn btn--link btn--success">Success</button>
+                <button class="btn btn--link btn--info">Info</button>
+                <button class="btn btn--link btn--warning">Warning</button>
+                <button class="btn btn--link btn--danger">Danger</button>
+                <div class="light">
+                    <button class="btn btn--link btn--dark">Dark</button>
+                </div>
+                <div class="dark">
+                    <button class="btn btn--link btn--light">Light</button>
+                </div>
 
-            <h3>Square Buttons</h3>
-            <p>All buttons can be squared.</p>
-            <button class="btn btn--square btn--primary">Primary</button>
-            <button class="btn btn--square btn--outline btn--secondary">Secondary</button>
-            <button class="btn btn--square btn--success">Success</button>
-            <button class="btn btn--square btn--outline btn--info">Info</button>
-            <button class="btn btn--square btn--warning">Warning</button>
-            <button class="btn btn--square btn--outline btn--danger">Danger</button>
-            <div class="light">
-            <button class="btn btn--square btn--dark">Dark</button>
-            </div>
-            <div class="dark">
-            <button class="btn btn--square btn--light">Light</button>
-            </div>
+                <h3>Square Buttons</h3>
+                <p>All buttons can be squared.</p>
+                <button class="btn btn--square btn--primary">Primary</button>
+                <button class="btn btn--square btn--success">Success</button>
+                <button class="btn btn--square btn--outline btn--info">Info</button>
+                <button class="btn btn--square btn--warning">Warning</button>
+                <button class="btn btn--square btn--outline btn--danger">Danger</button>
+                <div class="light">
+                    <button class="btn btn--square btn--dark">Dark</button>
+                </div>
+                <div class="dark">
+                    <button class="btn btn--square btn--light">Light</button>
+                </div>
 
-            <h3>Round Buttons</h3>
-            <p>Buttons can be round as well.</p>
-            <button class="btn btn--round btn--primary">Primary</button>
-            <button class="btn btn--round btn--outline btn--secondary">Secondary</button>
-            <button class="btn btn--round btn--success">Success</button>
-            <button class="btn btn--round btn--outline btn--info">Info</button>
-            <button class="btn btn--round btn--warning">Warning</button>
-            <button class="btn btn--round btn--outline btn--danger">Danger</button>
-            <div class="light">
-            <button class="btn btn--round btn--dark">Dark</button>
-            </div>
-            <div class="dark">
-            <button class="btn btn--round btn--light">Light</button>
-            </div>
-            
-        </section>
-        <section id="cards">
-            <h2>Cards</h2>
-            <p>Cards contain content and actions about a single subject.</p>
-            <p>They should be easy scan for relevant information and/or actions about their subject. Elements, such as text or images, should be placed in order of importance and clearly indicate hierarchy.</p>
-            <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <section class="card">
-                    <img class="card__img--top" src="/images/stock3.jpg" alt="stock photo example">
-                    <div class="card__body">
-                    <h3 class="card__title">Card Title</h3>
-                    <h4 class="card__subtitle">Subtitle</h4>
-                    <p class="card__text">Twee adaptogen blue bottle helvetica edison bulb readymade palo santo 
-                        wolf sartorial next level. Readymade blue bottle disrupt fixie cliche chartreuse post-ironic.</p>
-                    <button class="btn  btn--secondary btn--outline">Action</button>
-                    </div>
-                </section>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-                <section class="card">
-                    <img class="card__img card__img--top" src="/images/stock2.jpg" alt="stock photo example">
-                    <div class="card__body">
-                    <h3 class="card__title">Card Title</h3>
-                    <h4 class="card__subtitle">Subtitle</h4>
-                    <p class="card__text">Food truck banjo blog synth selvage prism tilde organic woke poke 
-                        jianbing etsy deep v 90's palo santo. Tumeric kinfolk mixtape whatever, banh mi chia celiac edison bulb.</p>
-                    </div>
-                </section>
-            </div>
-            </div>
-        </section>
-        <section class="controls" id="controls">
-            <h2>Controls</h2>
-            <p>We use custom, SVG-based controls to create a modern and consistent look across all mediums.</p>
-            <div class="row control-row">
-                <div class="col-xs">
-                    <h3>Checkboxes</h3>
-                    <div class="row">
-                    <div class="col-xs">
-                    <div class="checkbox">
-                        <input name="pizza" id="pizza" type="checkbox" value="1" checked="checked">
-                        <label for="pizza">
-                            <div class="checkbox-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+                <h3>Round Buttons</h3>
+                <p>Buttons can be round as well.</p>
+                <button class="btn btn--round btn--primary">Primary</button>
+                <button class="btn btn--round btn--success">Success</button>
+                <button class="btn btn--round btn--outline btn--info">Info</button>
+                <button class="btn btn--round btn--warning">Warning</button>
+                <button class="btn btn--round btn--outline btn--danger">Danger</button>
+                <div class="light">
+                    <button class="btn btn--round btn--dark">Dark</button>
+                </div>
+                <div class="dark">
+                    <button class="btn btn--round btn--light">Light</button>
+                </div>
+
+            </section>
+            <section id="cards">
+                <h2>Cards</h2>
+                <p>Cards contain content and actions about a single subject.</p>
+                <p>They should be easy scan for relevant information and/or actions about their subject. Elements, such
+                    as text or images, should be placed in order of importance and clearly indicate hierarchy.</p>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <section class="card">
+                            <img class="card__img--top" src="/images/stock3.jpg" alt="stock photo example">
+                            <div class="card__body">
+                                <h3 class="card__title">Card Title</h3>
+                                <h4 class="card__subtitle">Subtitle</h4>
+                                <p class="card__text">Twee adaptogen blue bottle helvetica edison bulb readymade palo
+                                    santo
+                                    wolf sartorial next level. Readymade blue bottle disrupt fixie cliche chartreuse
+                                    post-ironic.</p>
+                                <button class="btn  btn--primary btn--outline">Action</button>
                             </div>
-                            <span class="checkbox-text">
-                            Pizza</span>
-                        </label>
+                        </section>
                     </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-xs">
-                    <div class="checkbox">
-                        <input name="pasta" id="pasta" type="checkbox" value="1">
-                        <label for="pasta">
-                            <div class="checkbox-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
+                    <div class="col-xs-12 col-sm-6">
+                        <section class="card">
+                            <img class="card__img card__img--top" src="/images/stock2.jpg" alt="stock photo example">
+                            <div class="card__body">
+                                <h3 class="card__title">Card Title</h3>
+                                <h4 class="card__subtitle">Subtitle</h4>
+                                <p class="card__text">Food truck banjo blog synth selvage prism tilde organic woke poke
+                                    jianbing etsy deep v 90's palo santo. Tumeric kinfolk mixtape whatever, banh mi
+                                    chia celiac edison bulb.</p>
                             </div>
-                            <span class="checkbox-text">
-                            Pasta</span>
-                        </label>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-xs">
-                    <div class="checkbox">
-                        <input name="pancakes" id="pancakes" type="checkbox" disabled>
-                        <label for="pancakes">
-                            <div class="checkbox-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
-                            </div>
-                            <span class="checkbox-text">
-                            Pancakes</span>
-                        </label>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-xs">
-                    <div class="checkbox">
-                        <input name="papaya" id="papaya" type="checkbox" disabled checked="checked">
-                        <label for="papaya">
-                            <div class="checkbox-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25"><path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
-                            </div>
-                            <span class="checkbox-text">
-                            Papaya</span>
-                        </label>
-                    </div>
-                    </div>
+                        </section>
                     </div>
                 </div>
-                <div class="col-xs">
-                    <h3>Radio Buttons</h3>
-                    <div class="row">
+            </section>
+            <section class="controls" id="controls">
+                <h2>Controls</h2>
+                <p>We use custom, SVG-based controls to create a modern and consistent look across all mediums.</p>
+                <div class="row control-row">
                     <div class="col-xs">
-                        <input name="food" id="banana" type="radio" checked="checked">
-                        <label for="banana">
-                            Banana
-                        </label>
+                        <h3>Checkboxes</h3>
+                        <div class="row">
+                            <div class="col-xs">
+                                <div class="checkbox">
+                                    <input name="pizza" id="pizza" type="checkbox" value="1" checked="checked">
+                                    <label for="pizza">
+                                        <div class="checkbox-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25">
+                                                <path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="10"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox-text">
+                                            Pizza</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs">
+                                <div class="checkbox">
+                                    <input name="pasta" id="pasta" type="checkbox" value="1">
+                                    <label for="pasta">
+                                        <div class="checkbox-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25">
+                                                <path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="10"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox-text">
+                                            Pasta</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs">
+                                <div class="checkbox">
+                                    <input name="pancakes" id="pancakes" type="checkbox" disabled>
+                                    <label for="pancakes">
+                                        <div class="checkbox-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25">
+                                                <path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="10"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox-text">
+                                            Pancakes</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs">
+                                <div class="checkbox">
+                                    <input name="papaya" id="papaya" type="checkbox" disabled checked="checked">
+                                    <label for="papaya">
+                                        <div class="checkbox-box">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 25">
+                                                <path d="M6 15l10 10L35 3" fill="none" stroke="#fff" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="10"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox-text">
+                                            Papaya</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    <div class="row">
                     <div class="col-xs">
-                        <input name="food" id="butter" type="radio">
-                        <label for="butter">
-                            Butter
-                        </label>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-xs">
-                        <input name="food2" id="bread" type="radio" disabled>
-                        <label for="bread">
-                            Bread
-                        </label>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-xs">
-                        <input name="food2" id="beans" type="radio" checked="checked" disabled>
-                        <label for="beans">
-                            Beans
-                        </label>
-                    </div>
+                        <h3>Radio Buttons</h3>
+                        <div class="row">
+                            <div class="col-xs">
+                                <input name="food" id="banana" type="radio" checked="checked">
+                                <label for="banana">
+                                    Banana
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs">
+                                <input name="food" id="butter" type="radio">
+                                <label for="butter">
+                                    Butter
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs">
+                                <input name="food2" id="bread" type="radio" disabled>
+                                <label for="bread">
+                                    Bread
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs">
+                                <input name="food2" id="beans" type="radio" checked="checked" disabled>
+                                <label for="beans">
+                                    Beans
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </article>
-    <article id="css">
-        <h1 class="text -bar">CSS</h1>
-        <h2>Sass</h2>
-        <p><b>Sass</b> stands for <b>S</b>yntactically <b>a</b>wesome <b>s</b>tyle <b>s</b>heets.</p>
-        <p><a href="https://sass-lang.com/" target="_blank">Sass</a> is the official CBORD CSS preprocessor and it is recommended that all developers integrate 
-            Sass into their projects. Sass is one of the most powerful and versatile CSS preprocessors out 
-            there. It makes writing CSS faster, more efficient, and easier to maintain. <a href="https://sass-lang.com/" target="_blank"><img class="image right" alt="Sass" src="/images/Sass.svg"/></a></p>
-        <p>Sass does this by adding a lot of functionality that vanilla CSS lacks. This includes 
-            variables, mixins, hierarchy, and much more.</p>
-        <h2>BEM</h2>
-        <p><b>BEM</b> is the <b>B</b>lock, <b>E</b>lement, <b>M</b>odifier methodology.</p>
-        <p>If you must use your own custom CSS, follow <a href="https://bem.info/" target="_blank">BEM guidelines</a></p> <a href="https://bem.info/" target="_blank"><img class="image large right" src="/images/bem.svg" alt="BEM Logo"></a>
-        <p>A <b>block</b> is a functionally and logically independent component, for example a button: 
-            <code class="code no-break">.btn { }</code>. A block can be thought of as a parent.</p>
-        <p>An <b>element</b> is an item that cannot be placed outside of a block. Elements are indicated 
-            by two underscores following the name of the block, such as: <code class="code no-break">.btn__text { }</code>.</p>
-        <p>A <b>modifier</b> is an entity that defines the appearance or behavior of a block or element. This 
-            is indicated by appending two hyphens to the name of the block, such as: <code class="code no-break">.btn--blue { }</code>.</p>
-        <p>BEM is much more extensive than what is summarized here. To read more, 
-            visit the <a href="https://bem.info/" target="_blank">official BEM website</a>.</p>
+            </section>
+        </article>
+        <article id="css">
+            <h1 class="text -bar">CSS</h1>
+            <h2>Sass</h2>
+            <p><b class="dark-text">Sass</b> stands for <b class="dark-text">S</b>yntactically <b class="dark-text">a</b>wesome <b class="dark-text">s</b>tyle <b class="dark-text">s</b>heets.</p>
+            <p><a href="https://sass-lang.com/" target="_blank">Sass</a> is the official CBORD CSS preprocessor and it
+                is recommended that all developers integrate
+                Sass into their projects. Sass is one of the most powerful and versatile CSS preprocessors out
+                there. It makes writing CSS faster, more efficient, and easier to maintain. <a href="https://sass-lang.com/"
+                    target="_blank"><img class="image right" alt="Sass" src="/images/Sass.svg" /></a></p>
+            <p>Sass does this by adding a lot of functionality that vanilla CSS lacks. This includes
+                variables, mixins, hierarchy, and much more.</p>
+            <h2>BEM</h2>
+            <p><b class="dark-text">BEM</b> is the <b class="dark-text">B</b>lock, <b class="dark-text">E</b>lement, <b class="dark-text">M</b>odifier methodology.</p>
+            <p>If you must use your own custom CSS, follow <a href="https://bem.info/" target="_blank">BEM guidelines</a></p>
+            <a href="https://bem.info/" target="_blank"><img class="image large right" src="/images/bem.svg" alt="BEM Logo"></a>
+            <p>A <b class="dark-text">block</b> is a functionally and logically independent component, for example a button:
+                <code class="code no-break">.btn { }</code>. A block can be thought of as a parent.</p>
+            <p>An <b class="dark-text">element</b> is an item that cannot be placed outside of a block. Elements are indicated
+                by two underscores following the name of the block, such as: <code class="code no-break">.btn__text { }</code>.</p>
+            <p>A <b class="dark-text">modifier</b> is an entity that defines the appearance or behavior of a block or element. This
+                is indicated by appending two hyphens to the name of the block, such as: <code class="code no-break">.btn--blue
+                    { }</code>.</p>
+            <p>BEM is much more extensive than what is summarized here. To read more,
+                visit the <a href="https://bem.info/" target="_blank">official BEM website</a>.</p>
 
-    </article>
-    <article id="toneandvoice">
-        <h1 class="text -bar">Tone and Voice</h1>
-        <p>Simply looking like a CBORD app is not enough—your application should sound like it too. 
-            The tone and voice within an application are an important aspect of CBORD’s identity and should 
-            be consistent across all products.</p>
-        <h2>Tone</h2>
-        <p>Tone is <i class="dark-text">how</i> you speak. It expresses your attitude in regards to the user 
-            and the content of the application. When creating UI content, no matter what it is, you should do 
-            so in a clear, confident, and engaging tone.</p>
-        <ul>
-            <li class="indent"><b class="danger-text">Don't:</b> <q><i>ERROR! You messed up big time and now the app can't connect to the database - nice going.</i></q></li>
-            <li class="indent"><b class="success-text">Do:</b> <q><i>Sorry, we can't connect to the database right now.</i></q></li>
-        </ul>
-        <h2>Voice</h2>
-        <p>Voice is <i class="dark-text">what</i> you are speaking about. CBORD’s voice is friendly and familiar, 
-            but still straightforward and to the point. The priority is to help the user accomplish tasks, work 
-            efficiently, and feel confident in user interface actions. Voice should inform the user without confusion 
-            or clutter.</p>
-        <ul>
-            <li class="indent"><b class="danger-text">Don't:</b> <q><i>Well it looks like the transaction did what it 
-                should - you're probably good to go.</i></q></li>
-            <li class="indent"><b class="success-text">Do:</b> <q><i>The transaction was completed successfully.</i></q></li>
-        </ul>
-        <h2>Be Concise</h2>
-        <p>
+        </article>
+        <article id="toneandvoice">
+            <h1 class="text -bar">Tone and Voice</h1>
+            <p>Simply looking like a CBORD app is not enough—your application should sound like it too.
+                The tone and voice within an application are an important aspect of CBORD’s identity and should
+                be consistent across all products.</p>
+            <h2>Tone</h2>
+            <p>Tone is <i class="dark-text">how</i> you speak. It expresses your attitude in regards to the user
+                and the content of the application. When creating UI content, no matter what it is, you should do
+                so in a clear, confident, and engaging tone.</p>
             <ul>
-                <li>While details can add to an interface, be wary of length. Long chunks of text become 
-                    difficult to read and sometimes convey pretension.</li>
-                <li>Functional text on an application, like navigation or buttons, should be brief.</li>
+                <li class="indent"><b class="danger-text">Don't:</b> <q><i>ERROR! You messed up big time and now the
+                            app can't connect to the database - nice going.</i></q></li>
+                <li class="indent"><b class="success-text">Do:</b> <q><i>Sorry, we can't connect to the database right
+                            now.</i></q></li>
             </ul>
-        </p>
-        <h2>Writing Style</h2>
-        <p>
+            <h2>Voice</h2>
+            <p>Voice is <i class="dark-text">what</i> you are speaking about. CBORD’s voice is friendly and familiar,
+                but still straightforward and to the point. The priority is to help the user accomplish tasks, work
+                efficiently, and feel confident in user interface actions. Voice should inform the user without
+                confusion
+                or clutter.</p>
             <ul>
-                <li>Use the <b>active voice</b>—avoid the passive voice.</li>
-                <p>When using active voice, the subject of the sentence does the action. In passive voice, the subject 
-                    of the sentence has the action done to it.
-                <li class="indent"><b class="danger-text">Don't:</b> <q><i>The button was clicked by the user.</i></q></li>
-                <li class="indent"><b class="success-text">Do:</b> <q><i>The user clicked the button.</i></q></li>
-                </p>
-                <li>Your writing should be concise, direct, clear, and positive; avoid negative writing.</li>
-                <li>Avoid slang or jargon—write in plain English.</li>
+                <li class="indent"><b class="danger-text">Don't:</b> <q><i>Well it looks like the transaction did what
+                            it
+                            should - you're probably good to go.</i></q></li>
+                <li class="indent"><b class="success-text">Do:</b> <q><i>The transaction was completed successfully.</i></q></li>
             </ul>
-        </p>
-        <h2>User First</h2>
-        <p>
-            <ul>
-                <li>CBORD prides itself on its user-first mentality. Before writing, consider what state of mind the user 
-                    will likely have.</li>
-                <li>The overall tone and voice should not change, but you should still cater the content to the specific user 
-                    you are trying to reach.</li>
-            </ul>
-        </p>
-    </article>
-    <article id="images">
-        <h1 class="text -bar">Images, Icons, and Logos</h1>
-        <h2>Images</h2>
-        <p><b>Use SVG images</b> whenever possible. Why?
-            <ul>
-                <li>Small file sizes that compress well</li>
-                <li>Scales to any size without losing clarity (except very tiny)</li>
-                <li>Looks great on retina displays</li>
-                <li>Design control like interactivity and filters</li>
-            </ul>
-        </p>
-        <p>The Font Awesome icon framework supports SVG’s natively and it is expected that if your team 
-            is using <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, they are using the SVG icons (if possible).</p>
-        <h2>Icons</h2>
-        <p><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> is the approved and official icon resource for CBORD.</p>
-        <p>All applications not using Ionic should try to keep up to date with the latest icons that Font Awesome has to offer. Since 
-            the release of Font Awesome 5, there are now SVG icons.</p>        
-        <p><a href="http://ionicons.com/" target="_blank">Ionicons</a> are also an acceptable option. These icons should be utilized if your team is using the Ionic framework.</p>
-        <h2>Logos</h2>
-        <p>You can download the Official CBORD Logo via the following links:
-            <img class="image large right" src="/images/cbord_logo.png" alt="CBORD Logo">
-            <ul>
-                <li><a download="cbord_logo.svg" href="/images/cbord_logo.svg" title="CBORD Logo">SVG</a></li>
-                <li><a download="cbord_logo.png" href="/images/cbord_logo.png" title="CBORD Logo">PNG</a></li>
-                <li><a download="cbord_logo.ai" href="/images/cbord_logo.ai" title="CBORD Logo">Adobe Illustration (.ai)</a></li>
-            </ul>
-        </p>
-    </article>
-</div>
+            <h2>Be Concise</h2>
+            <p>
+                <ul>
+                    <li>While details can add to an interface, be wary of length. Long chunks of text become
+                        difficult to read and sometimes convey pretension.</li>
+                    <li>Functional text on an application, like navigation or buttons, should be brief.</li>
+                </ul>
+            </p>
+            <h2>Writing Style</h2>
+            <p>
+                <ul>
+                    <li>Use the <b class="dark-text">active voice</b>—avoid the passive voice.</li>
+                    <p>When using active voice, the subject of the sentence does the action. In passive voice, the
+                        subject
+                        of the sentence has the action done to it.
+                        <li class="indent"><b class="danger-text">Don't:</b> <q><i>The button was clicked by the user.</i></q></li>
+                        <li class="indent"><b class="success-text">Do:</b> <q><i>The user clicked the button.</i></q></li>
+                    </p>
+                    <li>Your writing should be concise, direct, clear, and positive; avoid negative writing.</li>
+                    <li>Avoid slang or jargon—write in plain English.</li>
+                </ul>
+            </p>
+            <h2>User First</h2>
+            <p>
+                <ul>
+                    <li>CBORD prides itself on its user-first mentality. Before writing, consider what state of mind
+                        the user
+                        will likely have.</li>
+                    <li>The overall tone and voice should not change, but you should still cater the content to the
+                        specific user
+                        you are trying to reach.</li>
+                </ul>
+            </p>
+        </article>
+        <article id="images">
+            <h1 class="text -bar">Images, Icons, and Logos</h1>
+            <h2>Images</h2>
+            <p><b class="dark-text">Use SVG images</b> whenever possible. Why?
+                <ul>
+                    <li>Small file sizes that compress well</li>
+                    <li>Scales to any size without losing clarity (except very tiny)</li>
+                    <li>Looks great on retina displays</li>
+                    <li>Design control like interactivity and filters</li>
+                </ul>
+            </p>
+            <p>The Font Awesome icon framework supports SVG’s natively and it is expected that if your team
+                is using <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, they are using the SVG
+                icons (if possible).</p>
+            <h2>Icons</h2>
+            <p><a href="https://fontawesome.com/" target="_blank">Font Awesome</a> is the approved and official icon
+                resource for CBORD.</p>
+            <p>All applications not using Ionic should try to keep up to date with the latest icons that Font Awesome
+                has to offer. Since
+                the release of Font Awesome 5, there are now SVG icons.</p>
+            <p><a href="http://ionicons.com/" target="_blank">Ionicons</a> are also an acceptable option. These icons
+                should be utilized if your team is using the Ionic framework.</p>
+            <h2>Logos</h2>
+            <p>You can download the Official CBORD Logo via the following links:
+                <img class="image large right" src="/images/cbord_logo.png" alt="CBORD Logo">
+                <ul>
+                    <li><a download="cbord_logo.svg" href="/images/cbord_logo.svg" title="CBORD Logo">SVG</a></li>
+                    <li><a download="cbord_logo.png" href="/images/cbord_logo.png" title="CBORD Logo">PNG</a></li>
+                    <li><a download="cbord_logo.ai" href="/images/cbord_logo.ai" title="CBORD Logo">Adobe Illustration
+                            (.ai)</a></li>
+                </ul>
+            </p>
+        </article>
+    </div>
 </body>
 <footer>
     <script src="/clipboard.min.js"></script>
     <script src="/script.js"></script>
 </footer>
+
 </html>
