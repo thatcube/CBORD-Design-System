@@ -70,6 +70,24 @@ img {
     width: 100%;
 }
 
+.message {
+    padding: 0 2rem;
+    width: 100%;
+    h1 {
+        font-weight: 500;
+        color: $black;
+        & a {
+            &, &:visited {
+                color: $black;
+            }
+            &:hover, &:focus {
+                color: $gray-6;
+            }
+        }
+    }
+    background: $mcyellow-lighten-1;
+}
+
 $logo-text-color: #414042;
 .title {
     //match logo color
