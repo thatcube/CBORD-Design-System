@@ -73,9 +73,20 @@ img {
 .message {
     padding: 0 2rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: $border-radius-base;
+    @include until(xl) {
+        margin: 3rem 0 5rem 0;
+    }
     h1 {
         font-weight: 500;
         color: $black;
+        font-size: 2rem;
+        @include until(xl) {
+            font-size: 1.6rem;
+        }
+        z-index: 1 !important;
         & a {
             &, &:visited {
                 color: $black;
